@@ -1,0 +1,1477 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TSCTableViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ThunderTable </a></h1>
+				<a id="developerHome" href="../index.html">3 SIDED CUBE DESIGN LTD</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TSCTableViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/dataSource">&nbsp;&nbsp;&nbsp;&nbsp;dataSource</option>
+	
+	<option value="//api/name/editItem">&nbsp;&nbsp;&nbsp;&nbsp;editItem</option>
+	
+	<option value="//api/name/flattenedDataSource">&nbsp;&nbsp;&nbsp;&nbsp;flattenedDataSource</option>
+	
+	<option value="//api/name/inputDictionary">&nbsp;&nbsp;&nbsp;&nbsp;inputDictionary</option>
+	
+	<option value="//api/name/isMissingRequiredInputRows">&nbsp;&nbsp;&nbsp;&nbsp;isMissingRequiredInputRows</option>
+	
+	<option value="//api/name/missingRequiredInputRows">&nbsp;&nbsp;&nbsp;&nbsp;missingRequiredInputRows</option>
+	
+	<option value="//api/name/refreshControl">&nbsp;&nbsp;&nbsp;&nbsp;refreshControl</option>
+	
+	<option value="//api/name/refreshEnabled">&nbsp;&nbsp;&nbsp;&nbsp;refreshEnabled</option>
+	
+	<option value="//api/name/refreshing">&nbsp;&nbsp;&nbsp;&nbsp;refreshing</option>
+	
+	<option value="//api/name/selectedIndexPath">&nbsp;&nbsp;&nbsp;&nbsp;selectedIndexPath</option>
+	
+	<option value="//api/name/shouldDisplayAlphabeticalSectionIndexTitles">&nbsp;&nbsp;&nbsp;&nbsp;shouldDisplayAlphabeticalSectionIndexTitles</option>
+	
+	<option value="//api/name/shouldDisplaySeparatorsOnCells">&nbsp;&nbsp;&nbsp;&nbsp;shouldDisplaySeparatorsOnCells</option>
+	
+	<option value="//api/name/shouldMakeFirstTextFieldFirstResponder">&nbsp;&nbsp;&nbsp;&nbsp;shouldMakeFirstTextFieldFirstResponder</option>
+	
+	<option value="//api/name/style">&nbsp;&nbsp;&nbsp;&nbsp;style</option>
+	
+	<option value="//api/name/tableView">&nbsp;&nbsp;&nbsp;&nbsp;tableView</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/handleRefresh">&nbsp;&nbsp;&nbsp;&nbsp;- handleRefresh</option>
+	
+	<option value="//api/name/initWithStyle:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithStyle:</option>
+	
+	<option value="//api/name/isIndexPathSelectable:">&nbsp;&nbsp;&nbsp;&nbsp;- isIndexPathSelectable:</option>
+	
+	<option value="//api/name/overideCellAtIndexPath:withClass:">&nbsp;&nbsp;&nbsp;&nbsp;- overideCellAtIndexPath:withClass:</option>
+	
+	<option value="//api/name/presentMissingRequiredInputRowsWarning">&nbsp;&nbsp;&nbsp;&nbsp;- presentMissingRequiredInputRowsWarning</option>
+	
+	<option value="//api/name/setDataSource:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- setDataSource:animated:</option>
+	
+	<option value="//api/name/textFieldDidReturn:">&nbsp;&nbsp;&nbsp;&nbsp;- textFieldDidReturn:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a TSCTableView Object">Initializing a TSCTableView Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring the Data Source">Configuring the Data Source</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring the Table View">Configuring the Table View</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Refreshing">Managing Refreshing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Editing">Managing Editing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Input Information">Accessing Input Information</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Input Validation">Managing Input Validation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Selections">Managing Selections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Overriding">Overriding</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataSource">dataSource</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editItem">editItem</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flattenedDataSource">flattenedDataSource</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputDictionary">inputDictionary</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMissingRequiredInputRows">isMissingRequiredInputRows</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/missingRequiredInputRows">missingRequiredInputRows</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/refreshControl">refreshControl</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/refreshEnabled">refreshEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/refreshing">refreshing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedIndexPath">selectedIndexPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldDisplayAlphabeticalSectionIndexTitles">shouldDisplayAlphabeticalSectionIndexTitles</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldDisplaySeparatorsOnCells">shouldDisplaySeparatorsOnCells</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldMakeFirstTextFieldFirstResponder">shouldMakeFirstTextFieldFirstResponder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/style">style</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableView">tableView</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleRefresh">handleRefresh</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithStyle:">initWithStyle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isIndexPathSelectable:">isIndexPathSelectable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/overideCellAtIndexPath:withClass:">overideCellAtIndexPath:withClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentMissingRequiredInputRowsWarning">presentMissingRequiredInputRowsWarning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDataSource:animated:">setDataSource:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textFieldDidReturn:">textFieldDidReturn:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TSCTableViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TSCTableViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/TSCTableInputViewCellDelegate.html">TSCTableInputViewCellDelegate</a><br />UITableViewDataSource<br />UITableViewDelegate<br />UITextFieldDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TSCTableViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>TSCTableViewController</code> is a subclass of UIViewController that provides convenient methods for quick creation of a <code>UITableViewController</code>. This class inherits from <code>UIViewController</code> because it provides easier access and cusomisation opportunities than subclassing UITableViewController.</p>
+
+<p>Although a <code>TSCTableViewController</code> can be used with the usual delegate and datasource methods of a <code>UITableViewController</code> it is recommended that you use the following classes;</p>
+
+<ul>
+<li><a href="../Classes/TSCTableRow.html"><code>TSCTableRow</code></a> for rows</li>
+<li><a href="../Classes/TSCTableSection.html"><code>TSCTableSection</code></a> for sections</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initializing a TSCTableView Object" name="task_Initializing a TSCTableView Object"></a>
+						<h3 class="subsubtitle task-title">Initializing a TSCTableView Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithStyle:">&ndash;&nbsp;initWithStyle:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring the Data Source" name="task_Configuring the Data Source"></a>
+						<h3 class="subsubtitle task-title">Configuring the Data Source</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataSource">&nbsp;&nbsp;dataSource</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedIndexPath">&nbsp;&nbsp;selectedIndexPath</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDataSource:animated:">&ndash;&nbsp;setDataSource:animated:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flattenedDataSource">&nbsp;&nbsp;flattenedDataSource</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring the Table View" name="task_Configuring the Table View"></a>
+						<h3 class="subsubtitle task-title">Configuring the Table View</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableView">&nbsp;&nbsp;tableView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/style">&nbsp;&nbsp;style</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldDisplayAlphabeticalSectionIndexTitles">&nbsp;&nbsp;shouldDisplayAlphabeticalSectionIndexTitles</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldDisplaySeparatorsOnCells">&nbsp;&nbsp;shouldDisplaySeparatorsOnCells</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldMakeFirstTextFieldFirstResponder">&nbsp;&nbsp;shouldMakeFirstTextFieldFirstResponder</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Refreshing" name="task_Managing Refreshing"></a>
+						<h3 class="subsubtitle task-title">Managing Refreshing</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/refreshControl">&nbsp;&nbsp;refreshControl</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleRefresh">&ndash;&nbsp;handleRefresh</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/refreshEnabled">&nbsp;&nbsp;refreshEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/refreshing">&nbsp;&nbsp;refreshing</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Editing" name="task_Managing Editing"></a>
+						<h3 class="subsubtitle task-title">Managing Editing</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editItem">&nbsp;&nbsp;editItem</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Input Information" name="task_Accessing Input Information"></a>
+						<h3 class="subsubtitle task-title">Accessing Input Information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputDictionary">&nbsp;&nbsp;inputDictionary</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Input Validation" name="task_Managing Input Validation"></a>
+						<h3 class="subsubtitle task-title">Managing Input Validation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/missingRequiredInputRows">&nbsp;&nbsp;missingRequiredInputRows</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isMissingRequiredInputRows">&nbsp;&nbsp;isMissingRequiredInputRows</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presentMissingRequiredInputRowsWarning">&ndash;&nbsp;presentMissingRequiredInputRowsWarning</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Selections" name="task_Managing Selections"></a>
+						<h3 class="subsubtitle task-title">Managing Selections</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isIndexPathSelectable:">&ndash;&nbsp;isIndexPathSelectable:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Overriding" name="task_Overriding"></a>
+						<h3 class="subsubtitle task-title">Overriding</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textFieldDidReturn:">&ndash;&nbsp;textFieldDidReturn:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/overideCellAtIndexPath:withClass:">&ndash;&nbsp;overideCellAtIndexPath:withClass:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dataSource" title="dataSource"></a>
+	<h3 class="subsubtitle method-title">dataSource</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of <a href="../Classes/TSCTableSection.html">TSCTableSection</a> items to be displayed in the view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *dataSource</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Setting this property will reload the table view with the given sections</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editItem" title="editItem"></a>
+	<h3 class="subsubtitle method-title">editItem</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The button to be used when setting the <a href="#//api/name/tableView"><code>tableView</code></a> to editing mode</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIBarButtonItem *editItem</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A default edit button is provided automatically, use this property to provide a custom button if desired</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flattenedDataSource" title="flattenedDataSource"></a>
+	<h3 class="subsubtitle method-title">flattenedDataSource</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of section items generated from all sections in the <a href="#//api/name/dataSource"><code>dataSource</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *flattenedDataSource</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property is generated by taking each <a href="../Classes/TSCTableSection.html"><code>TSCTableSection</code></a> in the <a href="#//api/name/dataSource"><code>dataSource</code></a> and compounding them into one array</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputDictionary" title="inputDictionary"></a>
+	<h3 class="subsubtitle method-title">inputDictionary</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A dictionary of keys and values populated from the <a href="#//api/name/tableView"><code>tableView</code></a> when displaying <a href="../Classes/TSCTableInputRow.html"><code>TSCTableInputRow</code></a>&rsquo;s.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *inputDictionary</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The key of each entry is the <code>inputId</code> of each <a href="../Classes/TSCTableInputRow.html"><code>TSCTableInputRow</code></a> where the key is it&rsquo;s corresponding <code>value</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isMissingRequiredInputRows" title="isMissingRequiredInputRows"></a>
+	<h3 class="subsubtitle method-title">isMissingRequiredInputRows</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean indicating if any of the <a href="../Classes/TSCTableInputRow.html"><code>TSCTableInputRow</code></a>&rsquo;s in the <a href="#//api/name/dataSource"><code>dataSource</code></a> with a <code>required</code> property set to YES have not yet had their input criteria satisfied</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL isMissingRequiredInputRows</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/missingRequiredInputRows" title="missingRequiredInputRows"></a>
+	<h3 class="subsubtitle method-title">missingRequiredInputRows</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of <a href="../Classes/TSCTableInputRow.html"><code>TSCTableInputRow</code></a>&rsquo;s that have the <code>required</code> property set to YES but have not yet had their input criteria satisfied</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *missingRequiredInputRows</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/refreshControl" title="refreshControl"></a>
+	<h3 class="subsubtitle method-title">refreshControl</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The refresh control used for &ldquo;Pull to refresh&rdquo; on the <a href="#//api/name/tableView"><code>tableView</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIRefreshControl *refreshControl</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property will return nil if <a href="#//api/name/refreshEnabled"><code>refreshEnabled</code></a> is set to NO</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/refreshEnabled" title="refreshEnabled"></a>
+	<h3 class="subsubtitle method-title">refreshEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean to enable or disabled the <a href="#//api/name/refreshControl"><code>refreshControl</code></a> on the <a href="#//api/name/tableView"><code>tableView</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isRefreshEnabled) BOOL refreshEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use <a href="#//api/name/refreshEnabled"><code>isRefreshEnabled</code></a> to check the state of this boolean</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/refreshing" title="refreshing"></a>
+	<h3 class="subsubtitle method-title">refreshing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean to set the <a href="#//api/name/refreshControl"><code>refreshControl</code></a> into or out of the refreshing state</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isRefreshing) BOOL refreshing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use <a href="#//api/name/refreshing"><code>isRefreshing</code></a> to check the state of this boolean. Setting this property to YES will cause the refresh control to display an animated loading indicator at the top of the <a href="#//api/name/tableView"><code>tableView</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedIndexPath" title="selectedIndexPath"></a>
+	<h3 class="subsubtitle method-title">selectedIndexPath</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSIndexPath *selectedIndexPath</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldDisplayAlphabeticalSectionIndexTitles" title="shouldDisplayAlphabeticalSectionIndexTitles"></a>
+	<h3 class="subsubtitle method-title">shouldDisplayAlphabeticalSectionIndexTitles</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used to enable Alphabetical index titles down the side of a table view by section</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldDisplayAlphabeticalSectionIndexTitles</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Each section should have a title set before enabling this property</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldDisplaySeparatorsOnCells" title="shouldDisplaySeparatorsOnCells"></a>
+	<h3 class="subsubtitle method-title">shouldDisplaySeparatorsOnCells</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enable or disabled seperators between table cells</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldDisplaySeparatorsOnCells</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldMakeFirstTextFieldFirstResponder" title="shouldMakeFirstTextFieldFirstResponder"></a>
+	<h3 class="subsubtitle method-title">shouldMakeFirstTextFieldFirstResponder</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean value indicating if the <a href="#//api/name/tableView"><code>tableView</code></a> should automatically make the first text field in the <a href="#//api/name/dataSource"><code>dataSource</code></a> the first responder upon load</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldMakeFirstTextFieldFirstResponder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value of this property is <code>YES</code>. When set to <code>YES</code> the first responder will be set in <code>viewDidAppear</code> the first time the view appears.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/style" title="style"></a>
+	<h3 class="subsubtitle method-title">style</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current <code>UITableViewStyle</code> of the <a href="#//api/name/tableView"><code>tableView</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UITableViewStyle style</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property should be initialised by one of the designated initializers below</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableView" title="tableView"></a>
+	<h3 class="subsubtitle method-title">tableView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current table view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UITableView *tableView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this property for accessing information about the underlying table view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/handleRefresh" title="handleRefresh"></a>
+	<h3 class="subsubtitle method-title">handleRefresh</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the <a href="#//api/name/refreshControl"><code>refreshControl</code></a> changes it&rsquo;s refresh state</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)handleRefresh</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the <a href="#//api/name/refreshControl"><code>refreshControl</code></a> changes it&rsquo;s refresh state</p><p>Override this method in your own class to perform custom tasks when a pull to refresh action is initiated</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithStyle:" title="initWithStyle:"></a>
+	<h3 class="subsubtitle method-title">initWithStyle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the <a href="#//api/name/tableView"><code>tableView</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithStyle:(UITableViewStyle)<em>style</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>style</em></dt>
+			<dd><p>The <code>UITableViewStyle</code> to initialise the <a href="#//api/name/tableView"><code>tableView</code></a> with.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes the <a href="#//api/name/tableView"><code>tableView</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isIndexPathSelectable:" title="isIndexPathSelectable:"></a>
+	<h3 class="subsubtitle method-title">isIndexPathSelectable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pass an indexPath to this method to determine whether or not the row can be selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isIndexPathSelectable:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>indexPath</em></dt>
+			<dd><p>The index path to check is selectable</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pass an indexPath to this method to determine whether or not the row can be selected.</p><p>This method will return YES when the row responds to <code>rowSelectionSelector</code> and <code>rowSelectionTarget</code> or the section it is a part of responds to <code>rowSelectionTarget</code> and <code>rowSelectionSelector</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/overideCellAtIndexPath:withClass:" title="overideCellAtIndexPath:withClass:"></a>
+	<h3 class="subsubtitle method-title">overideCellAtIndexPath:withClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use this method to register a custom cell type for a particular index path.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)overideCellAtIndexPath:(NSIndexPath *)<em>indexPath</em> withClass:(Class)<em>overideClass</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to register a custom cell type for a particular index path.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/presentMissingRequiredInputRowsWarning" title="presentMissingRequiredInputRowsWarning"></a>
+	<h3 class="subsubtitle method-title">presentMissingRequiredInputRowsWarning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Trigger a <code>UIAlertView</code> to inform the user that there are missing rows</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)presentMissingRequiredInputRowsWarning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Currently this just displays a default message if there are missing rows but in the future it will list out the titles of the fields that have not been completed</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDataSource:animated:" title="setDataSource:animated:"></a>
+	<h3 class="subsubtitle method-title">setDataSource:animated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the <a href="#//api/name/dataSource">dataSource</a> of the table view to reload with the new content</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setDataSource:(NSArray *)<em>dataSource</em> animated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>An array of <a href="../Classes/TSCTableSection.html"><code>TSCTableSection</code></a>s</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>A boolean indicating whether or not the table view should animate it&rsquo;s reload</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the <a href="#//api/name/dataSource">dataSource</a> of the table view to reload with the new content</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textFieldDidReturn:" title="textFieldDidReturn:"></a>
+	<h3 class="subsubtitle method-title">textFieldDidReturn:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the return key is pressed on the active UITextField</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textFieldDidReturn:(UITextField *)<em>textField</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the return key is pressed on the active UITextField</p><p>Override this method in your own class to perform custom behaviour on the return key</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 3 SIDED CUBE DESIGN LTD. All rights reserved. (Last updated: 2014-11-11)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

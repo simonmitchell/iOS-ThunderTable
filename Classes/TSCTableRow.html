@@ -1,0 +1,1105 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TSCTableRow Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ThunderTable </a></h1>
+				<a id="developerHome" href="../index.html">3 SIDED CUBE DESIGN LTD</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TSCTableRow Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/image">&nbsp;&nbsp;&nbsp;&nbsp;image</option>
+	
+	<option value="//api/name/imagePlaceholder">&nbsp;&nbsp;&nbsp;&nbsp;imagePlaceholder</option>
+	
+	<option value="//api/name/imageURL">&nbsp;&nbsp;&nbsp;&nbsp;imageURL</option>
+	
+	<option value="//api/name/link">&nbsp;&nbsp;&nbsp;&nbsp;link</option>
+	
+	<option value="//api/name/selector">&nbsp;&nbsp;&nbsp;&nbsp;selector</option>
+	
+	<option value="//api/name/shouldDisplaySelectionIndicator">&nbsp;&nbsp;&nbsp;&nbsp;shouldDisplaySelectionIndicator</option>
+	
+	<option value="//api/name/subtitle">&nbsp;&nbsp;&nbsp;&nbsp;subtitle</option>
+	
+	<option value="//api/name/target">&nbsp;&nbsp;&nbsp;&nbsp;target</option>
+	
+	<option value="//api/name/textColor">&nbsp;&nbsp;&nbsp;&nbsp;textColor</option>
+	
+	<option value="//api/name/title">&nbsp;&nbsp;&nbsp;&nbsp;title</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/rowWithTitle:">&nbsp;&nbsp;&nbsp;&nbsp;+ rowWithTitle:</option>
+	
+	<option value="//api/name/rowWithTitle:subtitle:image:">&nbsp;&nbsp;&nbsp;&nbsp;+ rowWithTitle:subtitle:image:</option>
+	
+	<option value="//api/name/rowWithTitle:subtitle:imageURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ rowWithTitle:subtitle:imageURL:</option>
+	
+	<option value="//api/name/rowWithTitle:textColor:">&nbsp;&nbsp;&nbsp;&nbsp;+ rowWithTitle:textColor:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addTarget:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- addTarget:selector:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a TSCTableRow Object">Initializing a TSCTableRow Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling selection">Handling selection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Row configuration">Row configuration</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/image">image</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imagePlaceholder">imagePlaceholder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageURL">imageURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/link">link</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selector">selector</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldDisplaySelectionIndicator">shouldDisplaySelectionIndicator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subtitle">subtitle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/target">target</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textColor">textColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/title">title</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowWithTitle:">rowWithTitle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowWithTitle:subtitle:image:">rowWithTitle:subtitle:image:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowWithTitle:subtitle:imageURL:">rowWithTitle:subtitle:imageURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowWithTitle:textColor:">rowWithTitle:textColor:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addTarget:selector:">addTarget:selector:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TSCTableRow Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TSCTableRow Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/TSCTableRowDataSource.html">TSCTableRowDataSource</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TSCTableRow.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>TSCTableRow</code> is the primary class for creating rows within a <a href="../Classes/TSCTableViewController.html"><code>TSCTableViewController</code></a>. Each row must be contained within a <a href="../Classes/TSCTableSection.html"><code>TSCTableSection</code></a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initializing a TSCTableRow Object" name="task_Initializing a TSCTableRow Object"></a>
+						<h3 class="subsubtitle task-title">Initializing a TSCTableRow Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowWithTitle:">+&nbsp;rowWithTitle:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowWithTitle:textColor:">+&nbsp;rowWithTitle:textColor:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowWithTitle:subtitle:image:">+&nbsp;rowWithTitle:subtitle:image:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowWithTitle:subtitle:imageURL:">+&nbsp;rowWithTitle:subtitle:imageURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subtitle">&nbsp;&nbsp;subtitle</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/image">&nbsp;&nbsp;image</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageURL">&nbsp;&nbsp;imageURL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imagePlaceholder">&nbsp;&nbsp;imagePlaceholder</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textColor">&nbsp;&nbsp;textColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/link">&nbsp;&nbsp;link</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling selection" name="task_Handling selection"></a>
+						<h3 class="subsubtitle task-title">Handling selection</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addTarget:selector:">&ndash;&nbsp;addTarget:selector:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/target">&nbsp;&nbsp;target</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selector">&nbsp;&nbsp;selector</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Row configuration" name="task_Row configuration"></a>
+						<h3 class="subsubtitle task-title">Row configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldDisplaySelectionIndicator">&nbsp;&nbsp;shouldDisplaySelectionIndicator</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/image" title="image"></a>
+	<h3 class="subsubtitle method-title">image</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <code>UIImage</code> to be displayed in the cell</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIImage *image</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imagePlaceholder" title="imagePlaceholder"></a>
+	<h3 class="subsubtitle method-title">imagePlaceholder</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The placeholder <a href="#//api/name/image">image</a> that is displayed whilst the cell is asynchronously loading the <a href="#//api/name/image">image</a> defined by the <a href="#//api/name/imageURL"><code>imageURL</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIImage *imagePlaceholder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageURL" title="imageURL"></a>
+	<h3 class="subsubtitle method-title">imageURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The URL of the <a href="#//api/name/image">image</a> to be loaded into the <a href="#//api/name/image">image</a> area of the cell</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSURL *imageURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/link" title="link"></a>
+	<h3 class="subsubtitle method-title">link</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The link that a row should attempt to push when selected</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) TSCLink *link</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selector" title="selector"></a>
+	<h3 class="subsubtitle method-title">selector</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The selector to be called on the <a href="#//api/name/target">target</a> upon the user selecting the row</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SEL selector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldDisplaySelectionIndicator" title="shouldDisplaySelectionIndicator"></a>
+	<h3 class="subsubtitle method-title">shouldDisplaySelectionIndicator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean to configure whether the cell shows the selection indicator when it is selectable</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldDisplaySelectionIndicator</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value of this property is <code>YES</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subtitle" title="subtitle"></a>
+	<h3 class="subsubtitle method-title">subtitle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text to be displayed in the cells <code>detailTextLabel</code></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *subtitle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/target" title="target"></a>
+	<h3 class="subsubtitle method-title">target</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The object to be called upon the user selecting the row</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id target</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textColor" title="textColor"></a>
+	<h3 class="subsubtitle method-title">textColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <code>UIColor</code> to apply to the text in the cell</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *textColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="subsubtitle method-title">title</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text to be displayed in the cells <code>textLabel</code></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *title</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/rowWithTitle:" title="rowWithTitle:"></a>
+	<h3 class="subsubtitle method-title">rowWithTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the row with a single <a href="#//api/name/title">title</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)rowWithTitle:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The <a href="#//api/name/title">title</a> to display in the row</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes the row with a single <a href="#//api/name/title">title</a>.</p><p>The <a href="#//api/name/title">title</a> will populate the <code>textLabel</code> text property of a <code>UITableViewCell</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowWithTitle:subtitle:image:" title="rowWithTitle:subtitle:image:"></a>
+	<h3 class="subsubtitle method-title">rowWithTitle:subtitle:image:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the row with a single <a href="#//api/name/title">title</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)rowWithTitle:(NSString *)<em>title</em> subtitle:(NSString *)<em>subtitle</em> image:(UIImage *)<em>image</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The <a href="#//api/name/title">title</a> to display in the row</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subtitle</em></dt>
+			<dd><p>The <a href="#//api/name/subtitle">subtitle</a> to display beneath the <a href="#//api/name/title">title</a> in the row</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>image</em></dt>
+			<dd><p>The <a href="#//api/name/image">image</a> to be displayed to the left hand side of the cell</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes the row with a single <a href="#//api/name/title">title</a>.</p><p>The <a href="#//api/name/title">title</a> will populate the <code>textLabel</code> text property and the <a href="#//api/name/subtitle">subtitle</a> will populate the <code>detailTextLabel</code> text property of the <code>UITableViewCell</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowWithTitle:subtitle:imageURL:" title="rowWithTitle:subtitle:imageURL:"></a>
+	<h3 class="subsubtitle method-title">rowWithTitle:subtitle:imageURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the row with a single <a href="#//api/name/title">title</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)rowWithTitle:(NSString *)<em>title</em> subtitle:(NSString *)<em>subtitle</em> imageURL:(NSURL *)<em>imageURL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The <a href="#//api/name/title">title</a> to display in the row</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subtitle</em></dt>
+			<dd><p>The URL of the <a href="#//api/name/image">image</a> to be displayed to the left hand side of the cell. Loaded asynchronously</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes the row with a single <a href="#//api/name/title">title</a>.</p><p>The <a href="#//api/name/title">title</a> will populate the <code>textLabel</code> text property and the <a href="#//api/name/subtitle">subtitle</a> will populate the <code>detailTextLabel</code> text property of the <code>UITableViewCell</code></p><div class="note"><p><strong>Note:</strong> Please set the <a href="#//api/name/imagePlaceholder"><code>imagePlaceholder</code></a> property when using this method. This is required because the <a href="#//api/name/image">image</a> width and height is used at layout to provide appropriate space for your loaded <a href="#//api/name/image">image</a>.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowWithTitle:textColor:" title="rowWithTitle:textColor:"></a>
+	<h3 class="subsubtitle method-title">rowWithTitle:textColor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the row with a single <a href="#//api/name/title">title</a> in a custom color</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)rowWithTitle:(NSString *)<em>title</em> textColor:(UIColor *)<em>textColor</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The <a href="#//api/name/title">title</a> to display in the row</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>A</em></dt>
+			<dd><p>&lsquo;UIColor&rsquo; to color the text with</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes the row with a single <a href="#//api/name/title">title</a> in a custom color</p><p>The <a href="#//api/name/title">title</a> will populate the <code>textLabel</code> text property of a <code>UITableViewCell</code>. The <a href="#//api/name/textColor">textColor</a> will be applied to the text.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addTarget:selector:" title="addTarget:selector:"></a>
+	<h3 class="subsubtitle method-title">addTarget:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a <a href="#//api/name/target">target</a> and <a href="#//api/name/selector">selector</a> to the cell. This makes the row selectable.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addTarget:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The object to send the selection event to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The <a href="#//api/name/selector">selector</a> to call on the <a href="#//api/name/target">target</a> object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds a <a href="#//api/name/target">target</a> and <a href="#//api/name/selector">selector</a> to the cell. This makes the row selectable.</p><p>Calling this method makes the cell selectable in the table view, also adding a selection indicator to the cell</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 3 SIDED CUBE DESIGN LTD. All rights reserved. (Last updated: 2014-11-11)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

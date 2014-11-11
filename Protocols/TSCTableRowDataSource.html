@@ -1,0 +1,1327 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TSCTableRowDataSource Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ThunderTable </a></h1>
+				<a id="developerHome" href="../index.html">3 SIDED CUBE DESIGN LTD</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TSCTableRowDataSource Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/canEditRow">&nbsp;&nbsp;&nbsp;&nbsp;- canEditRow</option>
+	
+	<option value="//api/name/indentationLevel">&nbsp;&nbsp;&nbsp;&nbsp;- indentationLevel</option>
+	
+	<option value="//api/name/rowAccessoryType">&nbsp;&nbsp;&nbsp;&nbsp;- rowAccessoryType</option>
+	
+	<option value="//api/name/rowImage">&nbsp;&nbsp;&nbsp;&nbsp;- rowImage</option>
+	
+	<option value="//api/name/rowImagePlaceholder">&nbsp;&nbsp;&nbsp;&nbsp;- rowImagePlaceholder</option>
+	
+	<option value="//api/name/rowImageURL">&nbsp;&nbsp;&nbsp;&nbsp;- rowImageURL</option>
+	
+	<option value="//api/name/rowLink">&nbsp;&nbsp;&nbsp;&nbsp;- rowLink</option>
+	
+	<option value="//api/name/rowPadding">&nbsp;&nbsp;&nbsp;&nbsp;- rowPadding</option>
+	
+	<option value="//api/name/rowSelectionSelector">&nbsp;&nbsp;&nbsp;&nbsp;- rowSelectionSelector</option>
+	
+	<option value="//api/name/rowSelectionTarget">&nbsp;&nbsp;&nbsp;&nbsp;- rowSelectionTarget</option>
+	
+	<option value="//api/name/rowSubtitle">&nbsp;&nbsp;&nbsp;&nbsp;- rowSubtitle</option>
+	
+	<option value="//api/name/rowTitle">&nbsp;&nbsp;&nbsp;&nbsp;- rowTitle</option>
+	
+	<option value="//api/name/shouldDisplaySelectionCell">&nbsp;&nbsp;&nbsp;&nbsp;- shouldDisplaySelectionCell</option>
+	
+	<option value="//api/name/shouldDisplaySelectionIndicator">&nbsp;&nbsp;&nbsp;&nbsp;- shouldDisplaySelectionIndicator</option>
+	
+	<option value="//api/name/shouldDisplaySeperator">&nbsp;&nbsp;&nbsp;&nbsp;- shouldDisplaySeperator</option>
+	
+	<option value="//api/name/shouldRemainSelected">&nbsp;&nbsp;&nbsp;&nbsp;- shouldRemainSelected</option>
+	
+	<option value="//api/name/tableViewCell:">&nbsp;&nbsp;&nbsp;&nbsp;- tableViewCell:</option>
+	
+	<option value="//api/name/tableViewCellClass">&nbsp;&nbsp;&nbsp;&nbsp;- tableViewCellClass</option>
+	
+	<option value="//api/name/tableViewCellEstimatedHeight">&nbsp;&nbsp;&nbsp;&nbsp;- tableViewCellEstimatedHeight</option>
+	
+	<option value="//api/name/tableViewCellHeightConstrainedToContentViewSize:tableViewSize:">&nbsp;&nbsp;&nbsp;&nbsp;- tableViewCellHeightConstrainedToContentViewSize:tableViewSize:</option>
+	
+	<option value="//api/name/tableViewCellHeightConstrainedToSize:">&nbsp;&nbsp;&nbsp;&nbsp;- tableViewCellHeightConstrainedToSize:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_General setup">General setup</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Overriding cell layout behaviour">Overriding cell layout behaviour</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Optimizing performance">Optimizing performance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Selection and editing behaviour">Selection and editing behaviour</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canEditRow">canEditRow</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indentationLevel">indentationLevel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowAccessoryType">rowAccessoryType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowImage">rowImage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowImagePlaceholder">rowImagePlaceholder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowImageURL">rowImageURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowLink">rowLink</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowPadding">rowPadding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowSelectionSelector">rowSelectionSelector</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowSelectionTarget">rowSelectionTarget</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowSubtitle">rowSubtitle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowTitle">rowTitle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldDisplaySelectionCell">shouldDisplaySelectionCell</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldDisplaySelectionIndicator">shouldDisplaySelectionIndicator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldDisplaySeperator">shouldDisplaySeperator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldRemainSelected">shouldRemainSelected</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableViewCell:">tableViewCell:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableViewCellClass">tableViewCellClass</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableViewCellEstimatedHeight">tableViewCellEstimatedHeight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableViewCellHeightConstrainedToContentViewSize:tableViewSize:">tableViewCellHeightConstrainedToContentViewSize:tableViewSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableViewCellHeightConstrainedToSize:">tableViewCellHeightConstrainedToSize:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TSCTableRowDataSource Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TSCTableRowDataSource Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TSCTableRowDataSource.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>All objects that can be displayed in a <a href="../Classes/TSCTableViewController.html"><code>TSCTableViewController</code></a> must conform to the <code>TSCTableRowDataSource</code> protocol. This protocol is useful for defininig how a object should represent itself in a tableview without the need to build a custom cell for display in a number of circumstances</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="General setup" name="task_General setup"></a>
+						<h3 class="subsubtitle task-title">General setup</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowTitle">&ndash;&nbsp;rowTitle</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowSubtitle">&ndash;&nbsp;rowSubtitle</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowImage">&ndash;&nbsp;rowImage</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowImageURL">&ndash;&nbsp;rowImageURL</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowImagePlaceholder">&ndash;&nbsp;rowImagePlaceholder</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Overriding cell layout behaviour" name="task_Overriding cell layout behaviour"></a>
+						<h3 class="subsubtitle task-title">Overriding cell layout behaviour</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableViewCellClass">&ndash;&nbsp;tableViewCellClass</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableViewCell:">&ndash;&nbsp;tableViewCell:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableViewCellHeightConstrainedToSize:">&ndash;&nbsp;tableViewCellHeightConstrainedToSize:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableViewCellHeightConstrainedToContentViewSize:tableViewSize:">&ndash;&nbsp;tableViewCellHeightConstrainedToContentViewSize:tableViewSize:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indentationLevel">&ndash;&nbsp;indentationLevel</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowAccessoryType">&ndash;&nbsp;rowAccessoryType</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowPadding">&ndash;&nbsp;rowPadding</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Optimizing performance" name="task_Optimizing performance"></a>
+						<h3 class="subsubtitle task-title">Optimizing performance</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableViewCellEstimatedHeight">&ndash;&nbsp;tableViewCellEstimatedHeight</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Selection and editing behaviour" name="task_Selection and editing behaviour"></a>
+						<h3 class="subsubtitle task-title">Selection and editing behaviour</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canEditRow">&ndash;&nbsp;canEditRow</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowSelectionTarget">&ndash;&nbsp;rowSelectionTarget</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowSelectionSelector">&ndash;&nbsp;rowSelectionSelector</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowLink">&ndash;&nbsp;rowLink</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldDisplaySelectionIndicator">&ndash;&nbsp;shouldDisplaySelectionIndicator</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldDisplaySelectionCell">&ndash;&nbsp;shouldDisplaySelectionCell</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldRemainSelected">&ndash;&nbsp;shouldRemainSelected</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldDisplaySeperator">&ndash;&nbsp;shouldDisplaySeperator</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/canEditRow" title="canEditRow"></a>
+	<h3 class="subsubtitle method-title">canEditRow</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean indicating whether or not the cell should allow editing</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)canEditRow</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indentationLevel" title="indentationLevel"></a>
+	<h3 class="subsubtitle method-title">indentationLevel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The level of indentation to enable in the cell</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)indentationLevel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value is <code>0</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowAccessoryType" title="rowAccessoryType"></a>
+	<h3 class="subsubtitle method-title">rowAccessoryType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The type of accessory to be shown on the cell if the row is selectable</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UITableViewCellAccessoryType)rowAccessoryType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowImage" title="rowImage"></a>
+	<h3 class="subsubtitle method-title">rowImage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <code>UIImage</code> to be displayed in the cell</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)rowImage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowImagePlaceholder" title="rowImagePlaceholder"></a>
+	<h3 class="subsubtitle method-title">rowImagePlaceholder</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The placeholder image that is displayed whilst the cell is asynchronously loading the image defined by the <code>imageURL</code></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)rowImagePlaceholder</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowImageURL" title="rowImageURL"></a>
+	<h3 class="subsubtitle method-title">rowImageURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The URL of the image to be loaded into the image area of the cell</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSURL *)rowImageURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowLink" title="rowLink"></a>
+	<h3 class="subsubtitle method-title">rowLink</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The link that a row should attempt to push when selected</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TSCLink *)rowLink</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowPadding" title="rowPadding"></a>
+	<h3 class="subsubtitle method-title">rowPadding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The amount of padding to add above and below the contents of the cell.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)rowPadding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You may find that adjusting this padding value on the cell improves the look and feel of your app</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowSelectionSelector" title="rowSelectionSelector"></a>
+	<h3 class="subsubtitle method-title">rowSelectionSelector</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The selector to be called on the target upon the user selecting the row</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SEL)rowSelectionSelector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowSelectionTarget" title="rowSelectionTarget"></a>
+	<h3 class="subsubtitle method-title">rowSelectionTarget</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The object to be called upon the user selecting the row</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)rowSelectionTarget</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowSubtitle" title="rowSubtitle"></a>
+	<h3 class="subsubtitle method-title">rowSubtitle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text to be displayed in the cells <code>detailTextLabel</code></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)rowSubtitle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowTitle" title="rowTitle"></a>
+	<h3 class="subsubtitle method-title">rowTitle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text to be displayed in the cells <code>textLabel</code></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)rowTitle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldDisplaySelectionCell" title="shouldDisplaySelectionCell"></a>
+	<h3 class="subsubtitle method-title">shouldDisplaySelectionCell</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean indicating if the cell should display the highlight state for selection</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldDisplaySelectionCell</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> This is only respected if the row selection target and row selector are both not nil. Otherwise neither are displayed</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldDisplaySelectionIndicator" title="shouldDisplaySelectionIndicator"></a>
+	<h3 class="subsubtitle method-title">shouldDisplaySelectionIndicator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean indicating if the cell should display the accessory view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldDisplaySelectionIndicator</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> This is only respected if the row selection target and row selector are both not nil. Otherwise neither are displayed</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldDisplaySeperator" title="shouldDisplaySeperator"></a>
+	<h3 class="subsubtitle method-title">shouldDisplaySeperator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean indicating if the cell should display the seperator between itself and it&rsquo;s surrounding cells</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldDisplaySeperator</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldRemainSelected" title="shouldRemainSelected"></a>
+	<h3 class="subsubtitle method-title">shouldRemainSelected</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A boolean indicating if the cell should display remain selected after being tapped</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldRemainSelected</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableViewCell:" title="tableViewCell:"></a>
+	<h3 class="subsubtitle method-title">tableViewCell:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method delivers the <code>cell</code> which has been rendered based on the other methods in the protocol.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UITableViewCell *)tableViewCell:(UITableViewCell *)<em>cell</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cell</em></dt>
+			<dd><p>The cell that will be rendered, please return this when you are finished customising</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the last chance to further customise the cell before it is rendered in the <a href="../Classes/TSCTableViewController.html"><code>TSCTableViewController</code></a></p><div class="note"><p><strong>Note:</strong> If you have overidden the class used by the row, this method will return a cell of that class type</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableViewCellClass" title="tableViewCellClass"></a>
+	<h3 class="subsubtitle method-title">tableViewCellClass</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <code>Class</code> to override the UITableViewCell with when displaying the row.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (Class)tableViewCellClass</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Provide a custom class to have <a href="../Classes/TSCTableViewController.html"><code>TSCTableViewController</code></a> use this class when rendering the row in the table view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableViewCellEstimatedHeight" title="tableViewCellEstimatedHeight"></a>
+	<h3 class="subsubtitle method-title">tableViewCellEstimatedHeight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Provide an estimated cell height to improve tableView loading performance where possible</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)tableViewCellEstimatedHeight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableViewCellHeightConstrainedToContentViewSize:tableViewSize:" title="tableViewCellHeightConstrainedToContentViewSize:tableViewSize:"></a>
+	<h3 class="subsubtitle method-title">tableViewCellHeightConstrainedToContentViewSize:tableViewSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Define a custom height for the cell to be rendered to</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)tableViewCellHeightConstrainedToContentViewSize:(CGSize)<em>contentViewSize</em> tableViewSize:(CGSize)<em>tableViewSize</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableViewSize</em></dt>
+			<dd><p>The size of the tableView that the cell will be rendered in.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>constrainedSize</em></dt>
+			<dd><p>The size of the contentView in the cell</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableViewCellHeightConstrainedToSize:" title="tableViewCellHeightConstrainedToSize:"></a>
+	<h3 class="subsubtitle method-title">tableViewCellHeightConstrainedToSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Define a custom height for the cell to be rendered to</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)tableViewCellHeightConstrainedToSize:(CGSize)<em>contrainedSize</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>constrainedSize</em></dt>
+			<dd><p>The size of the contentView in the cell</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> This method is deprecated, please use <a href="#//api/name/tableViewCellHeightConstrainedToContentViewSize:tableViewSize:"><code>tableViewCellHeightConstrainedToContentViewSize:tableViewSize:</code></a></p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSCTableRowDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 3 SIDED CUBE DESIGN LTD. All rights reserved. (Last updated: 2014-11-11)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
