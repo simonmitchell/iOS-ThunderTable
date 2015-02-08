@@ -7,167 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2DB350D1A863CE0004B3A34 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB350C1A863CE0004B3A34 /* TableRow.swift */; };
+		C2DB350F1A863D00004B3A34 /* TableRowDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB350E1A863D00004B3A34 /* TableRowDataSource.swift */; };
+		C2DB35111A865419004B3A34 /* TableSectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35101A865419004B3A34 /* TableSectionDataSource.swift */; };
+		C2DB35131A865852004B3A34 /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35121A865852004B3A34 /* TableSection.swift */; };
+		C2DB35151A865A18004B3A34 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35141A865A18004B3A34 /* TableViewController.swift */; };
+		C2DB35171A865A5C004B3A34 /* TableInputRowDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35161A865A5C004B3A34 /* TableInputRowDataSource.swift */; };
+		C2DB35191A8668A1004B3A34 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35181A8668A1004B3A34 /* TableViewCell.swift */; };
+		C2DB351B1A8669D1004B3A34 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB351A1A8669D1004B3A34 /* Theme.swift */; };
+		C2DB351D1A866BAE004B3A34 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB351C1A866BAE004B3A34 /* DefaultTheme.swift */; };
+		C2DB351F1A866D53004B3A34 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB351E1A866D53004B3A34 /* ThemeManager.swift */; };
+		C2DB35211A8672FF004B3A34 /* TableImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35201A8672FF004B3A34 /* TableImageRow.swift */; };
+		C2DB35231A867327004B3A34 /* TableImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35221A867327004B3A34 /* TableImageViewCell.swift */; };
+		C2DB35251A867892004B3A34 /* TableInputViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35241A867892004B3A34 /* TableInputViewCell.swift */; };
+		C2DB35271A8678B2004B3A34 /* TableInputTextFieldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35261A8678B2004B3A34 /* TableInputTextFieldViewCell.swift */; };
+		C2DB35291A867905004B3A34 /* TableInputTextViewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35281A867905004B3A34 /* TableInputTextViewViewCell.swift */; };
+		C2DB352B1A867923004B3A34 /* TableInputDatePickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB352A1A867923004B3A34 /* TableInputDatePickerViewCell.swift */; };
+		C2DB352D1A867941004B3A34 /* TableInputPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB352C1A867941004B3A34 /* TableInputPickerViewCell.swift */; };
+		C2DB352F1A867963004B3A34 /* TableInputSwitchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB352E1A867963004B3A34 /* TableInputSwitchViewCell.swift */; };
+		C2DB35311A867984004B3A34 /* TableInputCheckViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35301A867984004B3A34 /* TableInputCheckViewCell.swift */; };
+		C2DB35331A86799A004B3A34 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35321A86799A004B3A34 /* CheckView.swift */; };
+		C2DB35351A8679BE004B3A34 /* TableInputSliderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35341A8679BE004B3A34 /* TableInputSliderViewCell.swift */; };
+		C2DB35391A86892A004B3A34 /* TableInputDatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35381A86892A004B3A34 /* TableInputDatePickerRow.swift */; };
+		C2DB353B1A868945004B3A34 /* TableInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB353A1A868945004B3A34 /* TableInputRow.swift */; };
+		C2DB353D1A869078004B3A34 /* TableInputPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB353C1A869078004B3A34 /* TableInputPickerRow.swift */; };
+		C2DB353F1A86B77A004B3A34 /* TableInputSwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB353E1A86B77A004B3A34 /* TableInputSwitchRow.swift */; };
+		C2DB35411A86C639004B3A34 /* TableInputCheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35401A86C639004B3A34 /* TableInputCheckRow.swift */; };
+		C2DB35431A86CA6B004B3A34 /* TableInputSliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35421A86CA6B004B3A34 /* TableInputSliderRow.swift */; };
+		C2DB35451A86CE58004B3A34 /* TableInputTextFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35441A86CE58004B3A34 /* TableInputTextFieldRow.swift */; };
+		C2DB35471A86D16E004B3A34 /* TableInputTextViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35461A86D16E004B3A34 /* TableInputTextViewRow.swift */; };
+		C2DB354F1A86F57F004B3A34 /* UIImageView+TSCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB354E1A86F57F004B3A34 /* UIImageView+TSCImageView.swift */; };
+		C2DB35511A86F639004B3A34 /* ImageRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35501A86F639004B3A34 /* ImageRequestOperation.swift */; };
+		C2DB35531A86F651004B3A34 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35521A86F651004B3A34 /* ImageController.swift */; };
+		C2DB35561A871148004B3A34 /* UITableViewCellGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DB35541A871148004B3A34 /* UITableViewCellGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2DB35571A871148004B3A34 /* UITableViewCellGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB35551A871148004B3A34 /* UITableViewCellGenerator.m */; };
 		C2E5099219C839F600350F00 /* ThunderTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E5099119C839F600350F00 /* ThunderTableTests.swift */; };
 		C2E5099C19C83A3500350F00 /* ThunderTable.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E5099B19C83A3500350F00 /* ThunderTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509AC19C83A4000350F00 /* TSCTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509A119C83A4000350F00 /* TSCTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509AD19C83A4000350F00 /* TSCThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509A219C83A4000350F00 /* TSCThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509AE19C83A4000350F00 /* TSCThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509A319C83A4000350F00 /* TSCThemeManager.m */; };
-		C2E509AF19C83A4000350F00 /* TSCDefaultTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509A419C83A4000350F00 /* TSCDefaultTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509B019C83A4000350F00 /* TSCDefaultTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509A519C83A4000350F00 /* TSCDefaultTheme.m */; };
-		C2E509B119C83A4000350F00 /* TSCTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509A619C83A4000350F00 /* TSCTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509B219C83A4000350F00 /* TSCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509A719C83A4000350F00 /* TSCTableViewController.m */; };
-		C2E509B919C83A4D00350F00 /* TSCImageController.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509B319C83A4D00350F00 /* TSCImageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509BA19C83A4D00350F00 /* TSCImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509B419C83A4D00350F00 /* TSCImageController.m */; };
-		C2E509BB19C83A4D00350F00 /* TSCImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509B519C83A4D00350F00 /* TSCImageRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509BC19C83A4D00350F00 /* TSCImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509B619C83A4D00350F00 /* TSCImageRequestOperation.m */; };
-		C2E509BD19C83A4D00350F00 /* UIImageView+TSCImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509B719C83A4D00350F00 /* UIImageView+TSCImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509BE19C83A4D00350F00 /* UIImageView+TSCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509B819C83A4D00350F00 /* UIImageView+TSCImageView.m */; };
-		C2E509C419C83A7A00350F00 /* TSCItemPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509C019C83A7A00350F00 /* TSCItemPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509C519C83A7A00350F00 /* TSCItemPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509C119C83A7A00350F00 /* TSCItemPickerController.m */; };
-		C2E509C619C83A7A00350F00 /* TSCItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509C219C83A7A00350F00 /* TSCItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509C719C83A7A00350F00 /* TSCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509C319C83A7A00350F00 /* TSCItem.m */; };
-		C2E509CF19C83A9A00350F00 /* TSCTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509C919C83A9A00350F00 /* TSCTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509D019C83A9A00350F00 /* TSCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509CA19C83A9A00350F00 /* TSCTableViewCell.m */; };
-		C2E509D119C83A9A00350F00 /* TSCTableValue1ViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509CB19C83A9A00350F00 /* TSCTableValue1ViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509D219C83A9A00350F00 /* TSCTableValue1ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509CC19C83A9A00350F00 /* TSCTableValue1ViewCell.m */; };
-		C2E509D319C83A9A00350F00 /* TSCTableImageViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509CD19C83A9A00350F00 /* TSCTableImageViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509D419C83A9A00350F00 /* TSCTableImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509CE19C83A9A00350F00 /* TSCTableImageViewCell.m */; };
-		C2E509EA19C83ACA00350F00 /* TSCTableInputViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509D619C83ACA00350F00 /* TSCTableInputViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509EB19C83ACA00350F00 /* TSCTableInputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509D719C83ACA00350F00 /* TSCTableInputViewCell.m */; };
-		C2E509EC19C83ACA00350F00 /* TSCTableInputTextFieldViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509D819C83ACA00350F00 /* TSCTableInputTextFieldViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509ED19C83ACA00350F00 /* TSCTableInputTextFieldViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509D919C83ACA00350F00 /* TSCTableInputTextFieldViewCell.m */; };
-		C2E509EE19C83ACA00350F00 /* TSCTableInputTextViewViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509DA19C83ACA00350F00 /* TSCTableInputTextViewViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509EF19C83ACA00350F00 /* TSCTableInputTextViewViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509DB19C83ACA00350F00 /* TSCTableInputTextViewViewCell.m */; };
-		C2E509F019C83ACA00350F00 /* TSCTableInputDatePickerViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509DC19C83ACA00350F00 /* TSCTableInputDatePickerViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509F119C83ACA00350F00 /* TSCTableInputDatePickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509DD19C83ACA00350F00 /* TSCTableInputDatePickerViewCell.m */; };
-		C2E509F219C83ACA00350F00 /* TSCTableInputPickerViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509DE19C83ACA00350F00 /* TSCTableInputPickerViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509F319C83ACA00350F00 /* TSCTableInputPickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509DF19C83ACA00350F00 /* TSCTableInputPickerViewCell.m */; };
-		C2E509F419C83ACA00350F00 /* TSCTableInputSwitchViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509E019C83ACA00350F00 /* TSCTableInputSwitchViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509F519C83ACA00350F00 /* TSCTableInputSwitchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509E119C83ACA00350F00 /* TSCTableInputSwitchViewCell.m */; };
-		C2E509F619C83ACA00350F00 /* TSCTableInputCheckViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509E219C83ACA00350F00 /* TSCTableInputCheckViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509F719C83ACA00350F00 /* TSCTableInputCheckViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509E319C83ACA00350F00 /* TSCTableInputCheckViewCell.m */; };
-		C2E509F819C83ACA00350F00 /* TSCCheckView.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509E419C83ACA00350F00 /* TSCCheckView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509F919C83ACA00350F00 /* GCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509E519C83ACA00350F00 /* GCPlaceholderTextView.m */; };
-		C2E509FA19C83ACA00350F00 /* TSCCheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509E619C83ACA00350F00 /* TSCCheckView.m */; };
-		C2E509FB19C83ACA00350F00 /* GCPlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509E719C83ACA00350F00 /* GCPlaceholderTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509FC19C83ACA00350F00 /* TSCTableInputSliderViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509E819C83ACA00350F00 /* TSCTableInputSliderViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E509FD19C83ACA00350F00 /* TSCTableInputSliderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E509E919C83ACA00350F00 /* TSCTableInputSliderViewCell.m */; };
-		C2E50A0519C83B1700350F00 /* TSCTableRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E509FF19C83B1700350F00 /* TSCTableRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A0619C83B1700350F00 /* TSCTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A0019C83B1700350F00 /* TSCTableRow.m */; };
-		C2E50A0719C83B1700350F00 /* TSCTableImageRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A0119C83B1700350F00 /* TSCTableImageRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A0819C83B1700350F00 /* TSCTableImageRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A0219C83B1700350F00 /* TSCTableImageRow.m */; };
-		C2E50A0919C83B1700350F00 /* TSCTableValue1Row.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A0319C83B1700350F00 /* TSCTableValue1Row.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A0A19C83B1700350F00 /* TSCTableValue1Row.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A0419C83B1700350F00 /* TSCTableValue1Row.m */; };
-		C2E50A1C19C83B2C00350F00 /* TSCTableInputRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A0C19C83B2C00350F00 /* TSCTableInputRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A1D19C83B2C00350F00 /* TSCTableInputRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A0D19C83B2C00350F00 /* TSCTableInputRow.m */; };
-		C2E50A1E19C83B2C00350F00 /* TSCTableInputTextFieldRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A0E19C83B2C00350F00 /* TSCTableInputTextFieldRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A1F19C83B2C00350F00 /* TSCTableInputTextFieldRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A0F19C83B2C00350F00 /* TSCTableInputTextFieldRow.m */; };
-		C2E50A2019C83B2C00350F00 /* TSCTableInputTextViewRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A1019C83B2C00350F00 /* TSCTableInputTextViewRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A2119C83B2C00350F00 /* TSCTableInputTextViewRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A1119C83B2C00350F00 /* TSCTableInputTextViewRow.m */; };
-		C2E50A2219C83B2C00350F00 /* TSCTableInputSwitchRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A1219C83B2C00350F00 /* TSCTableInputSwitchRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A2319C83B2C00350F00 /* TSCTableInputSwitchRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A1319C83B2C00350F00 /* TSCTableInputSwitchRow.m */; };
-		C2E50A2419C83B2C00350F00 /* TSCTableInputDatePickerRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A1419C83B2C00350F00 /* TSCTableInputDatePickerRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A2519C83B2C00350F00 /* TSCTableInputDatePickerRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A1519C83B2C00350F00 /* TSCTableInputDatePickerRow.m */; };
-		C2E50A2619C83B2C00350F00 /* TSCTableInputPickerRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A1619C83B2C00350F00 /* TSCTableInputPickerRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A2719C83B2C00350F00 /* TSCTableInputPickerRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A1719C83B2C00350F00 /* TSCTableInputPickerRow.m */; };
-		C2E50A2819C83B2C00350F00 /* TSCTableInputCheckRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A1819C83B2C00350F00 /* TSCTableInputCheckRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A2919C83B2C00350F00 /* TSCTableInputCheckRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A1919C83B2C00350F00 /* TSCTableInputCheckRow.m */; };
-		C2E50A2A19C83B2C00350F00 /* TSCTableInputSliderRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A1A19C83B2C00350F00 /* TSCTableInputSliderRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A2B19C83B2C00350F00 /* TSCTableInputSliderRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A1B19C83B2C00350F00 /* TSCTableInputSliderRow.m */; };
-		C2E50A3119C83B4200350F00 /* TSCTableRowDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A2D19C83B4200350F00 /* TSCTableRowDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A3219C83B4200350F00 /* TSCTableInputRowDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A2E19C83B4200350F00 /* TSCTableInputRowDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A3319C83B4200350F00 /* TSCTableInputSliderRowDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A2F19C83B4200350F00 /* TSCTableInputSliderRowDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A3419C83B4200350F00 /* TSCTableSectionDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A3019C83B4200350F00 /* TSCTableSectionDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A3C19C83B5F00350F00 /* TSCTableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A3619C83B5F00350F00 /* TSCTableSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A3D19C83B5F00350F00 /* TSCTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A3719C83B5F00350F00 /* TSCTableSection.m */; };
-		C2E50A3E19C83B5F00350F00 /* TSCTableSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A3819C83B5F00350F00 /* TSCTableSelection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A3F19C83B5F00350F00 /* TSCTableSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A3919C83B5F00350F00 /* TSCTableSelection.m */; };
-		C2E50A4019C83B5F00350F00 /* TSCTableSortedSections.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E50A3A19C83B5F00350F00 /* TSCTableSortedSections.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E50A4119C83B5F00350F00 /* TSCTableSortedSections.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50A3B19C83B5F00350F00 /* TSCTableSortedSections.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2DB350C1A863CE0004B3A34 /* TableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
+		C2DB350E1A863D00004B3A34 /* TableRowDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowDataSource.swift; sourceTree = "<group>"; };
+		C2DB35101A865419004B3A34 /* TableSectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionDataSource.swift; sourceTree = "<group>"; };
+		C2DB35121A865852004B3A34 /* TableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
+		C2DB35141A865A18004B3A34 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C2DB35161A865A5C004B3A34 /* TableInputRowDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputRowDataSource.swift; sourceTree = "<group>"; };
+		C2DB35181A8668A1004B3A34 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C2DB351A1A8669D1004B3A34 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C2DB351C1A866BAE004B3A34 /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		C2DB351E1A866D53004B3A34 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		C2DB35201A8672FF004B3A34 /* TableImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableImageRow.swift; sourceTree = "<group>"; };
+		C2DB35221A867327004B3A34 /* TableImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableImageViewCell.swift; sourceTree = "<group>"; };
+		C2DB35241A867892004B3A34 /* TableInputViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputViewCell.swift; sourceTree = "<group>"; };
+		C2DB35261A8678B2004B3A34 /* TableInputTextFieldViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputTextFieldViewCell.swift; sourceTree = "<group>"; };
+		C2DB35281A867905004B3A34 /* TableInputTextViewViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputTextViewViewCell.swift; sourceTree = "<group>"; };
+		C2DB352A1A867923004B3A34 /* TableInputDatePickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputDatePickerViewCell.swift; sourceTree = "<group>"; };
+		C2DB352C1A867941004B3A34 /* TableInputPickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputPickerViewCell.swift; sourceTree = "<group>"; };
+		C2DB352E1A867963004B3A34 /* TableInputSwitchViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputSwitchViewCell.swift; sourceTree = "<group>"; };
+		C2DB35301A867984004B3A34 /* TableInputCheckViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputCheckViewCell.swift; sourceTree = "<group>"; };
+		C2DB35321A86799A004B3A34 /* CheckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
+		C2DB35341A8679BE004B3A34 /* TableInputSliderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputSliderViewCell.swift; sourceTree = "<group>"; };
+		C2DB35381A86892A004B3A34 /* TableInputDatePickerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputDatePickerRow.swift; sourceTree = "<group>"; };
+		C2DB353A1A868945004B3A34 /* TableInputRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputRow.swift; sourceTree = "<group>"; };
+		C2DB353C1A869078004B3A34 /* TableInputPickerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputPickerRow.swift; sourceTree = "<group>"; };
+		C2DB353E1A86B77A004B3A34 /* TableInputSwitchRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputSwitchRow.swift; sourceTree = "<group>"; };
+		C2DB35401A86C639004B3A34 /* TableInputCheckRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputCheckRow.swift; sourceTree = "<group>"; };
+		C2DB35421A86CA6B004B3A34 /* TableInputSliderRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputSliderRow.swift; sourceTree = "<group>"; };
+		C2DB35441A86CE58004B3A34 /* TableInputTextFieldRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputTextFieldRow.swift; sourceTree = "<group>"; };
+		C2DB35461A86D16E004B3A34 /* TableInputTextViewRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInputTextViewRow.swift; sourceTree = "<group>"; };
+		C2DB354E1A86F57F004B3A34 /* UIImageView+TSCImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+TSCImageView.swift"; sourceTree = "<group>"; };
+		C2DB35501A86F639004B3A34 /* ImageRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRequestOperation.swift; sourceTree = "<group>"; };
+		C2DB35521A86F651004B3A34 /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		C2DB35541A871148004B3A34 /* UITableViewCellGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellGenerator.h; sourceTree = "<group>"; };
+		C2DB35551A871148004B3A34 /* UITableViewCellGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewCellGenerator.m; sourceTree = "<group>"; };
 		C2E5098219C839F600350F00 /* ThunderTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThunderTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E5098619C839F600350F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2E5098D19C839F600350F00 /* ThunderTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThunderTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E5099019C839F600350F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2E5099119C839F600350F00 /* ThunderTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderTableTests.swift; sourceTree = "<group>"; };
 		C2E5099B19C83A3500350F00 /* ThunderTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThunderTable.h; sourceTree = "<group>"; };
-		C2E509A119C83A4000350F00 /* TSCTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTheme.h; sourceTree = "<group>"; };
-		C2E509A219C83A4000350F00 /* TSCThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCThemeManager.h; sourceTree = "<group>"; };
-		C2E509A319C83A4000350F00 /* TSCThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCThemeManager.m; sourceTree = "<group>"; };
-		C2E509A419C83A4000350F00 /* TSCDefaultTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCDefaultTheme.h; sourceTree = "<group>"; };
-		C2E509A519C83A4000350F00 /* TSCDefaultTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCDefaultTheme.m; sourceTree = "<group>"; };
-		C2E509A619C83A4000350F00 /* TSCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableViewController.h; sourceTree = "<group>"; };
-		C2E509A719C83A4000350F00 /* TSCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableViewController.m; sourceTree = "<group>"; };
-		C2E509B319C83A4D00350F00 /* TSCImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCImageController.h; sourceTree = "<group>"; };
-		C2E509B419C83A4D00350F00 /* TSCImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCImageController.m; sourceTree = "<group>"; };
-		C2E509B519C83A4D00350F00 /* TSCImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCImageRequestOperation.h; sourceTree = "<group>"; };
-		C2E509B619C83A4D00350F00 /* TSCImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCImageRequestOperation.m; sourceTree = "<group>"; };
-		C2E509B719C83A4D00350F00 /* UIImageView+TSCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+TSCImageView.h"; sourceTree = "<group>"; };
-		C2E509B819C83A4D00350F00 /* UIImageView+TSCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+TSCImageView.m"; sourceTree = "<group>"; };
-		C2E509C019C83A7A00350F00 /* TSCItemPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCItemPickerController.h; sourceTree = "<group>"; };
-		C2E509C119C83A7A00350F00 /* TSCItemPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCItemPickerController.m; sourceTree = "<group>"; };
-		C2E509C219C83A7A00350F00 /* TSCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCItem.h; sourceTree = "<group>"; };
-		C2E509C319C83A7A00350F00 /* TSCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCItem.m; sourceTree = "<group>"; };
-		C2E509C919C83A9A00350F00 /* TSCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableViewCell.h; sourceTree = "<group>"; };
-		C2E509CA19C83A9A00350F00 /* TSCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableViewCell.m; sourceTree = "<group>"; };
-		C2E509CB19C83A9A00350F00 /* TSCTableValue1ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableValue1ViewCell.h; sourceTree = "<group>"; };
-		C2E509CC19C83A9A00350F00 /* TSCTableValue1ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableValue1ViewCell.m; sourceTree = "<group>"; };
-		C2E509CD19C83A9A00350F00 /* TSCTableImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableImageViewCell.h; sourceTree = "<group>"; };
-		C2E509CE19C83A9A00350F00 /* TSCTableImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableImageViewCell.m; sourceTree = "<group>"; };
-		C2E509D619C83ACA00350F00 /* TSCTableInputViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputViewCell.h; sourceTree = "<group>"; };
-		C2E509D719C83ACA00350F00 /* TSCTableInputViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputViewCell.m; sourceTree = "<group>"; };
-		C2E509D819C83ACA00350F00 /* TSCTableInputTextFieldViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputTextFieldViewCell.h; sourceTree = "<group>"; };
-		C2E509D919C83ACA00350F00 /* TSCTableInputTextFieldViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputTextFieldViewCell.m; sourceTree = "<group>"; };
-		C2E509DA19C83ACA00350F00 /* TSCTableInputTextViewViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputTextViewViewCell.h; sourceTree = "<group>"; };
-		C2E509DB19C83ACA00350F00 /* TSCTableInputTextViewViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputTextViewViewCell.m; sourceTree = "<group>"; };
-		C2E509DC19C83ACA00350F00 /* TSCTableInputDatePickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputDatePickerViewCell.h; sourceTree = "<group>"; };
-		C2E509DD19C83ACA00350F00 /* TSCTableInputDatePickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputDatePickerViewCell.m; sourceTree = "<group>"; };
-		C2E509DE19C83ACA00350F00 /* TSCTableInputPickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputPickerViewCell.h; sourceTree = "<group>"; };
-		C2E509DF19C83ACA00350F00 /* TSCTableInputPickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputPickerViewCell.m; sourceTree = "<group>"; };
-		C2E509E019C83ACA00350F00 /* TSCTableInputSwitchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputSwitchViewCell.h; sourceTree = "<group>"; };
-		C2E509E119C83ACA00350F00 /* TSCTableInputSwitchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputSwitchViewCell.m; sourceTree = "<group>"; };
-		C2E509E219C83ACA00350F00 /* TSCTableInputCheckViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputCheckViewCell.h; sourceTree = "<group>"; };
-		C2E509E319C83ACA00350F00 /* TSCTableInputCheckViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputCheckViewCell.m; sourceTree = "<group>"; };
-		C2E509E419C83ACA00350F00 /* TSCCheckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCCheckView.h; sourceTree = "<group>"; };
-		C2E509E519C83ACA00350F00 /* GCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPlaceholderTextView.m; sourceTree = "<group>"; };
-		C2E509E619C83ACA00350F00 /* TSCCheckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCCheckView.m; sourceTree = "<group>"; };
-		C2E509E719C83ACA00350F00 /* GCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCPlaceholderTextView.h; sourceTree = "<group>"; };
-		C2E509E819C83ACA00350F00 /* TSCTableInputSliderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputSliderViewCell.h; sourceTree = "<group>"; };
-		C2E509E919C83ACA00350F00 /* TSCTableInputSliderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputSliderViewCell.m; sourceTree = "<group>"; };
-		C2E509FF19C83B1700350F00 /* TSCTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableRow.h; sourceTree = "<group>"; };
-		C2E50A0019C83B1700350F00 /* TSCTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableRow.m; sourceTree = "<group>"; };
-		C2E50A0119C83B1700350F00 /* TSCTableImageRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableImageRow.h; sourceTree = "<group>"; };
-		C2E50A0219C83B1700350F00 /* TSCTableImageRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableImageRow.m; sourceTree = "<group>"; };
-		C2E50A0319C83B1700350F00 /* TSCTableValue1Row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableValue1Row.h; sourceTree = "<group>"; };
-		C2E50A0419C83B1700350F00 /* TSCTableValue1Row.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableValue1Row.m; sourceTree = "<group>"; };
-		C2E50A0C19C83B2C00350F00 /* TSCTableInputRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputRow.h; sourceTree = "<group>"; };
-		C2E50A0D19C83B2C00350F00 /* TSCTableInputRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputRow.m; sourceTree = "<group>"; };
-		C2E50A0E19C83B2C00350F00 /* TSCTableInputTextFieldRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputTextFieldRow.h; sourceTree = "<group>"; };
-		C2E50A0F19C83B2C00350F00 /* TSCTableInputTextFieldRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputTextFieldRow.m; sourceTree = "<group>"; };
-		C2E50A1019C83B2C00350F00 /* TSCTableInputTextViewRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputTextViewRow.h; sourceTree = "<group>"; };
-		C2E50A1119C83B2C00350F00 /* TSCTableInputTextViewRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputTextViewRow.m; sourceTree = "<group>"; };
-		C2E50A1219C83B2C00350F00 /* TSCTableInputSwitchRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputSwitchRow.h; sourceTree = "<group>"; };
-		C2E50A1319C83B2C00350F00 /* TSCTableInputSwitchRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputSwitchRow.m; sourceTree = "<group>"; };
-		C2E50A1419C83B2C00350F00 /* TSCTableInputDatePickerRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputDatePickerRow.h; sourceTree = "<group>"; };
-		C2E50A1519C83B2C00350F00 /* TSCTableInputDatePickerRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputDatePickerRow.m; sourceTree = "<group>"; };
-		C2E50A1619C83B2C00350F00 /* TSCTableInputPickerRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputPickerRow.h; sourceTree = "<group>"; };
-		C2E50A1719C83B2C00350F00 /* TSCTableInputPickerRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputPickerRow.m; sourceTree = "<group>"; };
-		C2E50A1819C83B2C00350F00 /* TSCTableInputCheckRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputCheckRow.h; sourceTree = "<group>"; };
-		C2E50A1919C83B2C00350F00 /* TSCTableInputCheckRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputCheckRow.m; sourceTree = "<group>"; };
-		C2E50A1A19C83B2C00350F00 /* TSCTableInputSliderRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputSliderRow.h; sourceTree = "<group>"; };
-		C2E50A1B19C83B2C00350F00 /* TSCTableInputSliderRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableInputSliderRow.m; sourceTree = "<group>"; };
-		C2E50A2D19C83B4200350F00 /* TSCTableRowDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableRowDataSource.h; sourceTree = "<group>"; };
-		C2E50A2E19C83B4200350F00 /* TSCTableInputRowDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputRowDataSource.h; sourceTree = "<group>"; };
-		C2E50A2F19C83B4200350F00 /* TSCTableInputSliderRowDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableInputSliderRowDataSource.h; sourceTree = "<group>"; };
-		C2E50A3019C83B4200350F00 /* TSCTableSectionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableSectionDataSource.h; sourceTree = "<group>"; };
-		C2E50A3619C83B5F00350F00 /* TSCTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableSection.h; sourceTree = "<group>"; };
-		C2E50A3719C83B5F00350F00 /* TSCTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableSection.m; sourceTree = "<group>"; };
-		C2E50A3819C83B5F00350F00 /* TSCTableSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableSelection.h; sourceTree = "<group>"; };
-		C2E50A3919C83B5F00350F00 /* TSCTableSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableSelection.m; sourceTree = "<group>"; };
-		C2E50A3A19C83B5F00350F00 /* TSCTableSortedSections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTableSortedSections.h; sourceTree = "<group>"; };
-		C2E50A3B19C83B5F00350F00 /* TSCTableSortedSections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTableSortedSections.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,19 +127,15 @@
 		C2E5098419C839F600350F00 /* ThunderTable */ = {
 			isa = PBXGroup;
 			children = (
+				C2DB35141A865A18004B3A34 /* TableViewController.swift */,
 				C2E5099B19C83A3500350F00 /* ThunderTable.h */,
-				C2E509A119C83A4000350F00 /* TSCTheme.h */,
-				C2E509A219C83A4000350F00 /* TSCThemeManager.h */,
-				C2E509A319C83A4000350F00 /* TSCThemeManager.m */,
-				C2E509A419C83A4000350F00 /* TSCDefaultTheme.h */,
-				C2E509A519C83A4000350F00 /* TSCDefaultTheme.m */,
-				C2E509A619C83A4000350F00 /* TSCTableViewController.h */,
-				C2E509A719C83A4000350F00 /* TSCTableViewController.m */,
+				C2DB35541A871148004B3A34 /* UITableViewCellGenerator.h */,
+				C2DB35551A871148004B3A34 /* UITableViewCellGenerator.m */,
+				C2DB351A1A8669D1004B3A34 /* Theme.swift */,
+				C2DB351C1A866BAE004B3A34 /* DefaultTheme.swift */,
+				C2DB351E1A866D53004B3A34 /* ThemeManager.swift */,
 				C2E50A4219C83B6500350F00 /* Models */,
-				C2E50A3519C83B4600350F00 /* Protocols */,
-				C2E50A0B19C83B1D00350F00 /* Rows */,
 				C2E509D519C83AAD00350F00 /* Cells */,
-				C2E509C819C83A8100350F00 /* Picker */,
 				C2E509BF19C83A5300350F00 /* Images */,
 				C2E5098519C839F600350F00 /* Supporting Files */,
 			);
@@ -256,38 +170,19 @@
 		C2E509BF19C83A5300350F00 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				C2E509B319C83A4D00350F00 /* TSCImageController.h */,
-				C2E509B419C83A4D00350F00 /* TSCImageController.m */,
-				C2E509B519C83A4D00350F00 /* TSCImageRequestOperation.h */,
-				C2E509B619C83A4D00350F00 /* TSCImageRequestOperation.m */,
-				C2E509B719C83A4D00350F00 /* UIImageView+TSCImageView.h */,
-				C2E509B819C83A4D00350F00 /* UIImageView+TSCImageView.m */,
+				C2DB354E1A86F57F004B3A34 /* UIImageView+TSCImageView.swift */,
+				C2DB35501A86F639004B3A34 /* ImageRequestOperation.swift */,
+				C2DB35521A86F651004B3A34 /* ImageController.swift */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		C2E509C819C83A8100350F00 /* Picker */ = {
-			isa = PBXGroup;
-			children = (
-				C2E509C019C83A7A00350F00 /* TSCItemPickerController.h */,
-				C2E509C119C83A7A00350F00 /* TSCItemPickerController.m */,
-				C2E509C219C83A7A00350F00 /* TSCItem.h */,
-				C2E509C319C83A7A00350F00 /* TSCItem.m */,
-			);
-			name = Picker;
 			sourceTree = "<group>";
 		};
 		C2E509D519C83AAD00350F00 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C2E509C919C83A9A00350F00 /* TSCTableViewCell.h */,
-				C2E509CA19C83A9A00350F00 /* TSCTableViewCell.m */,
-				C2E509CB19C83A9A00350F00 /* TSCTableValue1ViewCell.h */,
-				C2E509CC19C83A9A00350F00 /* TSCTableValue1ViewCell.m */,
-				C2E509CD19C83A9A00350F00 /* TSCTableImageViewCell.h */,
-				C2E509CE19C83A9A00350F00 /* TSCTableImageViewCell.m */,
-				C2E509D619C83ACA00350F00 /* TSCTableInputViewCell.h */,
-				C2E509D719C83ACA00350F00 /* TSCTableInputViewCell.m */,
+				C2DB35181A8668A1004B3A34 /* TableViewCell.swift */,
+				C2DB35221A867327004B3A34 /* TableImageViewCell.swift */,
+				C2DB35241A867892004B3A34 /* TableInputViewCell.swift */,
 				C2E509FE19C83AF100350F00 /* Input Cells */,
 			);
 			name = Cells;
@@ -296,24 +191,14 @@
 		C2E509FE19C83AF100350F00 /* Input Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C2E509D819C83ACA00350F00 /* TSCTableInputTextFieldViewCell.h */,
-				C2E509D919C83ACA00350F00 /* TSCTableInputTextFieldViewCell.m */,
-				C2E509DA19C83ACA00350F00 /* TSCTableInputTextViewViewCell.h */,
-				C2E509DB19C83ACA00350F00 /* TSCTableInputTextViewViewCell.m */,
-				C2E509DC19C83ACA00350F00 /* TSCTableInputDatePickerViewCell.h */,
-				C2E509DD19C83ACA00350F00 /* TSCTableInputDatePickerViewCell.m */,
-				C2E509DE19C83ACA00350F00 /* TSCTableInputPickerViewCell.h */,
-				C2E509DF19C83ACA00350F00 /* TSCTableInputPickerViewCell.m */,
-				C2E509E019C83ACA00350F00 /* TSCTableInputSwitchViewCell.h */,
-				C2E509E119C83ACA00350F00 /* TSCTableInputSwitchViewCell.m */,
-				C2E509E219C83ACA00350F00 /* TSCTableInputCheckViewCell.h */,
-				C2E509E319C83ACA00350F00 /* TSCTableInputCheckViewCell.m */,
-				C2E509E419C83ACA00350F00 /* TSCCheckView.h */,
-				C2E509E619C83ACA00350F00 /* TSCCheckView.m */,
-				C2E509E719C83ACA00350F00 /* GCPlaceholderTextView.h */,
-				C2E509E519C83ACA00350F00 /* GCPlaceholderTextView.m */,
-				C2E509E819C83ACA00350F00 /* TSCTableInputSliderViewCell.h */,
-				C2E509E919C83ACA00350F00 /* TSCTableInputSliderViewCell.m */,
+				C2DB35261A8678B2004B3A34 /* TableInputTextFieldViewCell.swift */,
+				C2DB35281A867905004B3A34 /* TableInputTextViewViewCell.swift */,
+				C2DB352A1A867923004B3A34 /* TableInputDatePickerViewCell.swift */,
+				C2DB352C1A867941004B3A34 /* TableInputPickerViewCell.swift */,
+				C2DB352E1A867963004B3A34 /* TableInputSwitchViewCell.swift */,
+				C2DB35301A867984004B3A34 /* TableInputCheckViewCell.swift */,
+				C2DB35321A86799A004B3A34 /* CheckView.swift */,
+				C2DB35341A8679BE004B3A34 /* TableInputSliderViewCell.swift */,
 			);
 			name = "Input Cells";
 			sourceTree = "<group>";
@@ -321,12 +206,8 @@
 		C2E50A0B19C83B1D00350F00 /* Rows */ = {
 			isa = PBXGroup;
 			children = (
-				C2E509FF19C83B1700350F00 /* TSCTableRow.h */,
-				C2E50A0019C83B1700350F00 /* TSCTableRow.m */,
-				C2E50A0119C83B1700350F00 /* TSCTableImageRow.h */,
-				C2E50A0219C83B1700350F00 /* TSCTableImageRow.m */,
-				C2E50A0319C83B1700350F00 /* TSCTableValue1Row.h */,
-				C2E50A0419C83B1700350F00 /* TSCTableValue1Row.m */,
+				C2DB350C1A863CE0004B3A34 /* TableRow.swift */,
+				C2DB35201A8672FF004B3A34 /* TableImageRow.swift */,
 				C2E50A2C19C83B3200350F00 /* Input Rows */,
 			);
 			name = Rows;
@@ -335,22 +216,14 @@
 		C2E50A2C19C83B3200350F00 /* Input Rows */ = {
 			isa = PBXGroup;
 			children = (
-				C2E50A0C19C83B2C00350F00 /* TSCTableInputRow.h */,
-				C2E50A0D19C83B2C00350F00 /* TSCTableInputRow.m */,
-				C2E50A0E19C83B2C00350F00 /* TSCTableInputTextFieldRow.h */,
-				C2E50A0F19C83B2C00350F00 /* TSCTableInputTextFieldRow.m */,
-				C2E50A1019C83B2C00350F00 /* TSCTableInputTextViewRow.h */,
-				C2E50A1119C83B2C00350F00 /* TSCTableInputTextViewRow.m */,
-				C2E50A1219C83B2C00350F00 /* TSCTableInputSwitchRow.h */,
-				C2E50A1319C83B2C00350F00 /* TSCTableInputSwitchRow.m */,
-				C2E50A1419C83B2C00350F00 /* TSCTableInputDatePickerRow.h */,
-				C2E50A1519C83B2C00350F00 /* TSCTableInputDatePickerRow.m */,
-				C2E50A1619C83B2C00350F00 /* TSCTableInputPickerRow.h */,
-				C2E50A1719C83B2C00350F00 /* TSCTableInputPickerRow.m */,
-				C2E50A1819C83B2C00350F00 /* TSCTableInputCheckRow.h */,
-				C2E50A1919C83B2C00350F00 /* TSCTableInputCheckRow.m */,
-				C2E50A1A19C83B2C00350F00 /* TSCTableInputSliderRow.h */,
-				C2E50A1B19C83B2C00350F00 /* TSCTableInputSliderRow.m */,
+				C2DB353A1A868945004B3A34 /* TableInputRow.swift */,
+				C2DB35441A86CE58004B3A34 /* TableInputTextFieldRow.swift */,
+				C2DB35461A86D16E004B3A34 /* TableInputTextViewRow.swift */,
+				C2DB35381A86892A004B3A34 /* TableInputDatePickerRow.swift */,
+				C2DB353C1A869078004B3A34 /* TableInputPickerRow.swift */,
+				C2DB353E1A86B77A004B3A34 /* TableInputSwitchRow.swift */,
+				C2DB35401A86C639004B3A34 /* TableInputCheckRow.swift */,
+				C2DB35421A86CA6B004B3A34 /* TableInputSliderRow.swift */,
 			);
 			name = "Input Rows";
 			sourceTree = "<group>";
@@ -358,10 +231,9 @@
 		C2E50A3519C83B4600350F00 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				C2E50A2D19C83B4200350F00 /* TSCTableRowDataSource.h */,
-				C2E50A2E19C83B4200350F00 /* TSCTableInputRowDataSource.h */,
-				C2E50A2F19C83B4200350F00 /* TSCTableInputSliderRowDataSource.h */,
-				C2E50A3019C83B4200350F00 /* TSCTableSectionDataSource.h */,
+				C2DB35161A865A5C004B3A34 /* TableInputRowDataSource.swift */,
+				C2DB350E1A863D00004B3A34 /* TableRowDataSource.swift */,
+				C2DB35101A865419004B3A34 /* TableSectionDataSource.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -369,12 +241,9 @@
 		C2E50A4219C83B6500350F00 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C2E50A3619C83B5F00350F00 /* TSCTableSection.h */,
-				C2E50A3719C83B5F00350F00 /* TSCTableSection.m */,
-				C2E50A3819C83B5F00350F00 /* TSCTableSelection.h */,
-				C2E50A3919C83B5F00350F00 /* TSCTableSelection.m */,
-				C2E50A3A19C83B5F00350F00 /* TSCTableSortedSections.h */,
-				C2E50A3B19C83B5F00350F00 /* TSCTableSortedSections.m */,
+				C2E50A3519C83B4600350F00 /* Protocols */,
+				C2E50A0B19C83B1D00350F00 /* Rows */,
+				C2DB35121A865852004B3A34 /* TableSection.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -386,47 +255,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E509F419C83ACA00350F00 /* TSCTableInputSwitchViewCell.h in Headers */,
-				C2E509AD19C83A4000350F00 /* TSCThemeManager.h in Headers */,
-				C2E50A3C19C83B5F00350F00 /* TSCTableSection.h in Headers */,
-				C2E50A0519C83B1700350F00 /* TSCTableRow.h in Headers */,
-				C2E509EC19C83ACA00350F00 /* TSCTableInputTextFieldViewCell.h in Headers */,
-				C2E50A3219C83B4200350F00 /* TSCTableInputRowDataSource.h in Headers */,
-				C2E509AC19C83A4000350F00 /* TSCTheme.h in Headers */,
-				C2E509EE19C83ACA00350F00 /* TSCTableInputTextViewViewCell.h in Headers */,
-				C2E50A2A19C83B2C00350F00 /* TSCTableInputSliderRow.h in Headers */,
-				C2E509F019C83ACA00350F00 /* TSCTableInputDatePickerViewCell.h in Headers */,
-				C2E509FC19C83ACA00350F00 /* TSCTableInputSliderViewCell.h in Headers */,
-				C2E50A3419C83B4200350F00 /* TSCTableSectionDataSource.h in Headers */,
-				C2E509B919C83A4D00350F00 /* TSCImageController.h in Headers */,
-				C2E509C619C83A7A00350F00 /* TSCItem.h in Headers */,
-				C2E509CF19C83A9A00350F00 /* TSCTableViewCell.h in Headers */,
-				C2E509BB19C83A4D00350F00 /* TSCImageRequestOperation.h in Headers */,
-				C2E50A4019C83B5F00350F00 /* TSCTableSortedSections.h in Headers */,
-				C2E509F619C83ACA00350F00 /* TSCTableInputCheckViewCell.h in Headers */,
-				C2E509F219C83ACA00350F00 /* TSCTableInputPickerViewCell.h in Headers */,
-				C2E509C419C83A7A00350F00 /* TSCItemPickerController.h in Headers */,
-				C2E50A0719C83B1700350F00 /* TSCTableImageRow.h in Headers */,
-				C2E50A3119C83B4200350F00 /* TSCTableRowDataSource.h in Headers */,
-				C2E50A1E19C83B2C00350F00 /* TSCTableInputTextFieldRow.h in Headers */,
-				C2E50A2019C83B2C00350F00 /* TSCTableInputTextViewRow.h in Headers */,
-				C2E509D319C83A9A00350F00 /* TSCTableImageViewCell.h in Headers */,
-				C2E509EA19C83ACA00350F00 /* TSCTableInputViewCell.h in Headers */,
-				C2E50A1C19C83B2C00350F00 /* TSCTableInputRow.h in Headers */,
-				C2E509D119C83A9A00350F00 /* TSCTableValue1ViewCell.h in Headers */,
-				C2E50A2419C83B2C00350F00 /* TSCTableInputDatePickerRow.h in Headers */,
-				C2E50A0919C83B1700350F00 /* TSCTableValue1Row.h in Headers */,
-				C2E509FB19C83ACA00350F00 /* GCPlaceholderTextView.h in Headers */,
-				C2E50A2219C83B2C00350F00 /* TSCTableInputSwitchRow.h in Headers */,
-				C2E50A3E19C83B5F00350F00 /* TSCTableSelection.h in Headers */,
 				C2E5099C19C83A3500350F00 /* ThunderTable.h in Headers */,
-				C2E509B119C83A4000350F00 /* TSCTableViewController.h in Headers */,
-				C2E509AF19C83A4000350F00 /* TSCDefaultTheme.h in Headers */,
-				C2E50A2819C83B2C00350F00 /* TSCTableInputCheckRow.h in Headers */,
-				C2E509BD19C83A4D00350F00 /* UIImageView+TSCImageView.h in Headers */,
-				C2E50A2619C83B2C00350F00 /* TSCTableInputPickerRow.h in Headers */,
-				C2E50A3319C83B4200350F00 /* TSCTableInputSliderRowDataSource.h in Headers */,
-				C2E509F819C83ACA00350F00 /* TSCCheckView.h in Headers */,
+				C2DB35561A871148004B3A34 /* UITableViewCellGenerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,41 +355,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E509C519C83A7A00350F00 /* TSCItemPickerController.m in Sources */,
-				C2E50A2919C83B2C00350F00 /* TSCTableInputCheckRow.m in Sources */,
-				C2E50A2519C83B2C00350F00 /* TSCTableInputDatePickerRow.m in Sources */,
-				C2E509F719C83ACA00350F00 /* TSCTableInputCheckViewCell.m in Sources */,
-				C2E509F919C83ACA00350F00 /* GCPlaceholderTextView.m in Sources */,
-				C2E50A3F19C83B5F00350F00 /* TSCTableSelection.m in Sources */,
-				C2E509FA19C83ACA00350F00 /* TSCCheckView.m in Sources */,
-				C2E50A2319C83B2C00350F00 /* TSCTableInputSwitchRow.m in Sources */,
-				C2E50A1F19C83B2C00350F00 /* TSCTableInputTextFieldRow.m in Sources */,
-				C2E509FD19C83ACA00350F00 /* TSCTableInputSliderViewCell.m in Sources */,
-				C2E50A2B19C83B2C00350F00 /* TSCTableInputSliderRow.m in Sources */,
-				C2E50A0A19C83B1700350F00 /* TSCTableValue1Row.m in Sources */,
-				C2E509AE19C83A4000350F00 /* TSCThemeManager.m in Sources */,
-				C2E50A2719C83B2C00350F00 /* TSCTableInputPickerRow.m in Sources */,
-				C2E509B019C83A4000350F00 /* TSCDefaultTheme.m in Sources */,
-				C2E509B219C83A4000350F00 /* TSCTableViewController.m in Sources */,
-				C2E50A1D19C83B2C00350F00 /* TSCTableInputRow.m in Sources */,
-				C2E509EB19C83ACA00350F00 /* TSCTableInputViewCell.m in Sources */,
-				C2E50A0619C83B1700350F00 /* TSCTableRow.m in Sources */,
-				C2E50A4119C83B5F00350F00 /* TSCTableSortedSections.m in Sources */,
-				C2E509C719C83A7A00350F00 /* TSCItem.m in Sources */,
-				C2E509EF19C83ACA00350F00 /* TSCTableInputTextViewViewCell.m in Sources */,
-				C2E509F519C83ACA00350F00 /* TSCTableInputSwitchViewCell.m in Sources */,
-				C2E509BE19C83A4D00350F00 /* UIImageView+TSCImageView.m in Sources */,
-				C2E509F319C83ACA00350F00 /* TSCTableInputPickerViewCell.m in Sources */,
-				C2E509F119C83ACA00350F00 /* TSCTableInputDatePickerViewCell.m in Sources */,
-				C2E50A3D19C83B5F00350F00 /* TSCTableSection.m in Sources */,
-				C2E509D419C83A9A00350F00 /* TSCTableImageViewCell.m in Sources */,
-				C2E509D019C83A9A00350F00 /* TSCTableViewCell.m in Sources */,
-				C2E509BA19C83A4D00350F00 /* TSCImageController.m in Sources */,
-				C2E509BC19C83A4D00350F00 /* TSCImageRequestOperation.m in Sources */,
-				C2E50A2119C83B2C00350F00 /* TSCTableInputTextViewRow.m in Sources */,
-				C2E509D219C83A9A00350F00 /* TSCTableValue1ViewCell.m in Sources */,
-				C2E50A0819C83B1700350F00 /* TSCTableImageRow.m in Sources */,
-				C2E509ED19C83ACA00350F00 /* TSCTableInputTextFieldViewCell.m in Sources */,
+				C2DB35151A865A18004B3A34 /* TableViewController.swift in Sources */,
+				C2DB352D1A867941004B3A34 /* TableInputPickerViewCell.swift in Sources */,
+				C2DB35431A86CA6B004B3A34 /* TableInputSliderRow.swift in Sources */,
+				C2DB353B1A868945004B3A34 /* TableInputRow.swift in Sources */,
+				C2DB35111A865419004B3A34 /* TableSectionDataSource.swift in Sources */,
+				C2DB35251A867892004B3A34 /* TableInputViewCell.swift in Sources */,
+				C2DB351D1A866BAE004B3A34 /* DefaultTheme.swift in Sources */,
+				C2DB35511A86F639004B3A34 /* ImageRequestOperation.swift in Sources */,
+				C2DB35271A8678B2004B3A34 /* TableInputTextFieldViewCell.swift in Sources */,
+				C2DB35131A865852004B3A34 /* TableSection.swift in Sources */,
+				C2DB35571A871148004B3A34 /* UITableViewCellGenerator.m in Sources */,
+				C2DB35211A8672FF004B3A34 /* TableImageRow.swift in Sources */,
+				C2DB35331A86799A004B3A34 /* CheckView.swift in Sources */,
+				C2DB35471A86D16E004B3A34 /* TableInputTextViewRow.swift in Sources */,
+				C2DB354F1A86F57F004B3A34 /* UIImageView+TSCImageView.swift in Sources */,
+				C2DB352B1A867923004B3A34 /* TableInputDatePickerViewCell.swift in Sources */,
+				C2DB351B1A8669D1004B3A34 /* Theme.swift in Sources */,
+				C2DB35411A86C639004B3A34 /* TableInputCheckRow.swift in Sources */,
+				C2DB351F1A866D53004B3A34 /* ThemeManager.swift in Sources */,
+				C2DB350D1A863CE0004B3A34 /* TableRow.swift in Sources */,
+				C2DB35451A86CE58004B3A34 /* TableInputTextFieldRow.swift in Sources */,
+				C2DB35231A867327004B3A34 /* TableImageViewCell.swift in Sources */,
+				C2DB352F1A867963004B3A34 /* TableInputSwitchViewCell.swift in Sources */,
+				C2DB35191A8668A1004B3A34 /* TableViewCell.swift in Sources */,
+				C2DB353F1A86B77A004B3A34 /* TableInputSwitchRow.swift in Sources */,
+				C2DB35291A867905004B3A34 /* TableInputTextViewViewCell.swift in Sources */,
+				C2DB35531A86F651004B3A34 /* ImageController.swift in Sources */,
+				C2DB35351A8679BE004B3A34 /* TableInputSliderViewCell.swift in Sources */,
+				C2DB35171A865A5C004B3A34 /* TableInputRowDataSource.swift in Sources */,
+				C2DB35391A86892A004B3A34 /* TableInputDatePickerRow.swift in Sources */,
+				C2DB35311A867984004B3A34 /* TableInputCheckViewCell.swift in Sources */,
+				C2DB353D1A869078004B3A34 /* TableInputPickerRow.swift in Sources */,
+				C2DB350F1A863D00004B3A34 /* TableRowDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +490,7 @@
 		C2E5099619C839F600350F00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -674,12 +503,14 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C2E5099719C839F600350F00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
