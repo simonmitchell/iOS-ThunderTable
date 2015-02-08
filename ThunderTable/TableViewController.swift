@@ -243,7 +243,14 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         let section = self.dataSource[indexPath.section]
         let row = section.sectionItems()[indexPath.row]
         if cell == nil {
-            cell = UITableViewCell(style: row.rowStyle() != nil ? row.rowStyle()! : .Subtitle, reuseIdentifier: reuseIdentifier)
+            
+            var style: UITableViewCellStyle? = UITableViewCellStyle.Subtitle
+            if let rowStyle = row.rowStyle?() {
+                if let overrideStyle = UITableViewCellStyle(rawValue: rowStyle) {
+                    style = overrideStyle
+                }
+            }
+            cell = UITableViewCell(style: style!, reuseIdentifier: reuseIdentifier)
         }
         
         cell = self.configureCell(cell!, indexPath: indexPath)
@@ -287,20 +294,20 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         cell.imageView?.image = nil;
         
         // Basic defaults
-        if let textColor = row.rowTextColor() {
+        if let textColor = row.rowTextColor?() {
             cell.textLabel?.textColor = textColor
         }
         if let rowTitle = row.rowTitle() {
             cell.textLabel?.text = rowTitle
         }
-        if let rowSubtitle = row.rowSubtitle() {
+        if let rowSubtitle = row.rowSubtitle?() {
             cell.detailTextLabel?.text = rowSubtitle
         }
-        if let rowImageURL = row.rowImageURL() {
-            cell.imageView?.setImageURL(rowImageURL, placeholderImage: row.rowImagePlaceholder())
+        if let rowImageURL = row.rowImageURL?() {
+            cell.imageView?.setImageURL(rowImageURL, placeholderImage: row.rowImagePlaceholder?())
         }
-        if let rowImage = row.rowImage() {
-            cell.imageView?.image = row.rowImage()
+        if let rowImage = row.rowImage?() {
+            cell.imageView?.image = rowImage
         }
         
         // Accessory types based on selection
@@ -309,7 +316,7 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
 
         if self.isIndexPathSelectable(indexPath) {
             
-            cell.accessoryType = row.rowShouldDisplaySelectionIndicator() != nil ? (row.rowShouldDisplaySelectionIndicator()! ? .DisclosureIndicator : .None) : .None
+            cell.accessoryType = row.rowShouldDisplaySelectionIndicator?() != nil ? (row.rowShouldDisplaySelectionIndicator!() ? .DisclosureIndicator : .None) : .None
             cell.selectionStyle = .None
             //TODO: Missing whether should show selection
         } else {
@@ -336,7 +343,7 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         var cell = self.dequeueDynamicHeightCellWithIndexPath(indexPath)
         self.configureCell(cell, indexPath: indexPath)
         cell.frame = CGRectMake(0, 0, self.view.bounds.size.width - 8, 44)
-        cell.setNeedsLayout()
+        cell.layoutSubviews()
         
         var highestView: UIView = UIView(frame: CGRectMake(0, 0, 0, 0))
         var lowestYValue: CGFloat = 0.0
@@ -353,7 +360,7 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         }
         
         var cellHeight: CGFloat = CGRectGetMaxY(highestView.frame) + abs(lowestYValue) + 10.0
-        if let padding = self.dataSource[indexPath.section].sectionItems()[indexPath.row].rowPadding() {
+        if let padding = self.dataSource[indexPath.section].sectionItems()[indexPath.row].rowPadding?() {
             cellHeight = cellHeight - 10 + padding.bottom
         }
         return ceil(cellHeight)
@@ -369,7 +376,14 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         } else {
             
             let row = self.dataSource[indexPath.section].sectionItems()[indexPath.row]
-            cell = UITableViewCellGenerator.cellWithClass(cellClass, style: row.rowStyle() != nil ? row.rowStyle()! : .Subtitle, reuseIdentifier: NSStringFromClass(cellClass)) as UITableViewCell
+            
+            var style: UITableViewCellStyle? = UITableViewCellStyle.Subtitle
+            if let rowStyle = row.rowStyle?() {
+                if let overrideStyle = UITableViewCellStyle(rawValue: rowStyle) {
+                    style = overrideStyle
+                }
+            }
+            cell = UITableViewCell(style: style!, reuseIdentifier: NSStringFromClass(cellClass))
         }
         
         return cell
@@ -541,7 +555,7 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         var selectedCell: UITableViewCell?
         
         self.selectedIndexPath = indexPath
-        if let rowSelectionHandler = selectedRow.rowSelectionHandler() {
+        if let rowSelectionHandler = selectedRow.rowSelectionHandler?() {
             
             selectedCell = self.tableView.cellForRowAtIndexPath(indexPath)
             rowSelectionHandler(row: selectedRow, cell: selectedCell, indexPath: indexPath)
@@ -566,7 +580,7 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         let section = self.dataSource[indexPath.section]
         let row = section.sectionItems()[indexPath.row]
         
-        if let rowSelectionHandler = row.rowSelectionHandler() {
+        if let rowSelectionHandler = row.rowSelectionHandler?() {
             //TODO: Also return true if is TSCTableInputRowDataSource protocol
             return true
         }

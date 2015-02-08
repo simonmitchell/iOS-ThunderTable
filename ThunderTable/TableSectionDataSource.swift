@@ -11,7 +11,7 @@ import Foundation
 /**
 All sections that can be added in a `TableViewController` must conform to the `TableSectionDataSource` protocol. This protocol is for defining what is added to a table section and the table sections common properties
 */
-public protocol TableSectionDataSource {
+@objc public protocol TableSectionDataSource {
     
     ///---------------------------------------------------------------------------------------
     /// @name General setup

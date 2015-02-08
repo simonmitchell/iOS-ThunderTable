@@ -38,6 +38,13 @@ public class TableViewCell: UITableViewCell {
         self.separatorBottomView.backgroundColor = ThemeManager.sharedTheme().tableSeperatorColor()
         self.contentView.addSubview(self.separatorBottomView)
         
+        self.textLabel?.numberOfLines = 0
+        self.textLabel?.backgroundColor = UIColor.clearColor()
+        
+        self.detailTextLabel?.numberOfLines = 0
+        self.detailTextLabel?.font = UIFont.systemFontOfSize(14)
+        self.detailTextLabel?.textColor = UIColor.grayColor()
+        
         self.contentView.superview?.clipsToBounds = false
     }
     

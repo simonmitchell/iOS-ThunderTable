@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TableInputTextViewRow: TableInputRow, ExtendedTableRowDataSource {
+public class TableInputTextViewRow: TableInputRow {
    
     public var placeholder: String?
     public var cellHeight: Float
@@ -44,32 +44,9 @@ public class TableInputTextViewRow: TableInputRow, ExtendedTableRowDataSource {
     }
     
     //MARK: Extended table row datasource
-    public func shouldDisplaySelectionCell() -> Bool? {
-        return nil
-    }
-    
-    public func shouldRemainSelected() -> Bool? {
-        return nil
-    }
-    
-    public func shouldDisplaySeperators() -> Bool? {
-        return nil
-    }
-    
-    public func canEditRow() -> Bool? {
-        return nil
-    }
-    
-    public func indentationLevel() -> Int? {
-        return nil
-    }
-    
-    public func rowAccessoryType() -> UITableViewCellAccessoryType? {
-        return nil
-    }
-    
-    public func estimatedHeight() -> Double? {
-        return Double(self.cellHeight)
+
+    public override func estimatedCellHeight() -> CGFloat {
+        return CGFloat(self.cellHeight)
     }
     
     public func cellHeightConstrainedBy(size: CGSize) -> Float {
