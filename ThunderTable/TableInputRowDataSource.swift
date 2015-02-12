@@ -11,7 +11,7 @@ import Foundation
 /**
 All input row objects that can be displayed in a `TableViewController` must conform to the `TableInputRowDataSource` protocol. This protocol is required to access the input values of the row.
 */
-public protocol TableInputRowDataSource: class, TableRowDataSource {
+@objc public protocol TableInputRowDataSource: class, TableRowDataSource {
     
     ///---------------------------------------------------------------------------------------
     /// @name General setup

@@ -18,7 +18,7 @@ Although a `TableViewController` can be used with the usual delegate and datasou
 
 */
 
-public class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
+public class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, TableInputViewCellDelegate {
     
     //MARK: - Initialization
     
@@ -42,7 +42,6 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         self.shouldDisplaySeparatorsOnCells = true
         self.refreshEnabled = false
         self.refreshing = false
-        self.inputDictionary = Dictionary()
         self.missingRequiredInputRows = []
         self.cellOverrides = Dictionary()
         
@@ -68,7 +67,6 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         self.shouldDisplaySeparatorsOnCells = true
         self.refreshEnabled = false
         self.refreshing = false
-        self.inputDictionary = Dictionary()
         self.missingRequiredInputRows = []
         self.cellOverrides = Dictionary()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -263,10 +261,21 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         let section = self.dataSource[indexPath.section]
         let row = section.sectionItems()[indexPath.row]
         
-        //let contentViewSize = CGSizeMake(self.tableView.frame.size.width, 9999999999)
-        //TODO: Missing call to constrainedSize of row...
+        let contentViewSize = CGSizeMake(self.tableView.frame.size.width, 9999999999)
+        if let size = row.cellHeightConstrainedBy?(contentViewSize) {
+            return CGFloat(size)
+        } else {
+            return self.dynamicCellHeight(indexPath)
+        }
+    }
+    
+    public func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
-        return self.dynamicCellHeight(indexPath)
+        if let estimatedHeight = self.dataSource[indexPath.section].sectionItems()[indexPath.row].estimatedCellHeight?() {
+            return estimatedHeight
+        } else {
+            return self.tableView(tableView, heightForRowAtIndexPath: indexPath)
+        }
     }
     
     //MARK: UITableViewDataSource Helper Methods
@@ -309,30 +318,38 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         if let rowImage = row.rowImage?() {
             cell.imageView?.image = rowImage
         }
+        if let indentation = row.indentationLevel?() {
+            cell.indentationLevel = indentation
+        }
         
-        // Accessory types based on selection
-        
-        //TODO: Missing indentation level
-
         if self.isIndexPathSelectable(indexPath) {
             
             cell.accessoryType = row.rowShouldDisplaySelectionIndicator?() != nil ? (row.rowShouldDisplaySelectionIndicator!() ? .DisclosureIndicator : .None) : .None
-            cell.selectionStyle = .None
-            //TODO: Missing whether should show selection
+            cell.selectionStyle = row.shouldDisplaySelectionCell?() != nil ? (row.shouldDisplaySelectionCell!() ? .Default : .None) : .None
         } else {
             
             cell.accessoryType = .None
             cell.selectionStyle = .None
         }
         
-        //TODO: Add setting of input row and cell delegates
-        //TODO: Missing accessory type
+        if let inputCell = cell as? TableInputViewCell {
+            
+            inputCell.inputRow = row as? TableInputRowDataSource
+            inputCell.delegate = self
+        }
+        
+        if let accessoryType = row.rowAccessoryType?() {
+            cell.accessoryType = accessoryType
+        }
         
         if let tableCell = cell as? TableViewCell {
             
             tableCell.parentViewController = self
             tableCell.shouldDisplaySeparators = self.shouldDisplaySeparatorsOnCells
-            //TODO: Missing calling shouldDisplaySeperator on row
+            
+            if let displaySeparators = row.shouldDisplaySeperators?() {
+                tableCell.shouldDisplaySeparators = displaySeparators
+            }
         }
         
         return cell
@@ -467,7 +484,41 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
     @abstract A dictionary of keys and values populated from the `tableView` when displaying `TSCTableInputRow`'s.
     @discussion The key of each entry is the `inputId` of each `TSCTableInputRow` where the key is it's corresponding `value`
     */
-    public var inputDictionary: [String: AnyObject]
+    public var inputDictionary: [String: AnyObject] {
+        
+        get {
+            
+            var dictionary = [String: AnyObject]()
+            for section: TableSectionDataSource in self.dataSource {
+                for row: TableRowDataSource in section.sectionItems() {
+                    
+                    if let inputRow = row as? TableInputRowDataSource {
+                        
+                        if let value: AnyObject = inputRow.rowValue() {
+                            dictionary[inputRow.rowInputId()] = value
+                        } else {
+                            dictionary[inputRow.rowInputId()] = NSNull()
+                        }
+                    }
+                }
+            }
+            
+            return dictionary
+        }
+        
+        set {
+            
+            for section: TableSectionDataSource in self.dataSource {
+                for row: TableRowDataSource in section.sectionItems() {
+                    
+                    if let inputRow = row as? TableInputRowDataSource {
+                        
+                        inputRow.setValue(newValue[inputRow.rowInputId()])
+                    }
+                }
+            }
+        }
+    }
     
     //MARK: - Input Validation
     
@@ -537,12 +588,11 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
             
             for (indexRow, row: TableRowDataSource) in enumerate(section.sectionItems()) {
             
-                if let textFieldRow = row as? TableInputTextFieldRow {
+                 if row is TableInputRowDataSource {
                     
                     self.handleTableViewSelection(NSIndexPath(forRow: indexRow, inSection: indexSection))
                     return
                 }
-                //TODO: Implement selecting the first found input row
             }
         }
     }
@@ -567,12 +617,48 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         
         //TODO: make row inputs become first responders and scroll to them
         
-//        if selectedRow.r
-//            
-//            if let cell = self.tableView.cellForRowAtIndexPath(indexPath)
-//        }
+        if let inputRow = selectedRow as? TableInputRowDataSource {
+            
+            if selectedCell == nil {
+                selectedCell = self.tableView.cellForRowAtIndexPath(indexPath)
+            }
+            
+            if let checkCell = selectedCell as? TableInputCheckViewCell {
+                checkCell.checkView.setOn(!checkCell.checkView.on, animated: true)
+            } else {
+                self.resignAnyResponders()
+            }
+            
+            if let textFieldCell = selectedCell as? TableInputTextFieldViewCell {
+                
+                textFieldCell.setEditing(true, animated: true)
+                textFieldCell.textField.becomeFirstResponder()
+                self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Middle, animated: false)
+            } else if let textViewCell = selectedCell as? TableInputTextViewViewCell {
+                
+                textViewCell.setEditing(true, animated: true)
+                textViewCell.textView.becomeFirstResponder()
+                self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Middle, animated: false)
+            } else if let datePickerCell = selectedCell as? TableInputDatePickerViewCell {
+                
+                datePickerCell.setEditing(true, animated: true)
+                datePickerCell.inputView?.becomeFirstResponder()
+                self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Middle, animated: false)
+            } else if let pickerCell = selectedCell as? TableInputPickerViewCell {
+                
+                pickerCell.setEditing(true, animated: true)
+                pickerCell.inputView?.becomeFirstResponder()
+                self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Middle, animated: false)
+            }
+        }
         
-        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        if let staySelected = selectedRow.shouldRemainSelected?() {
+            if !staySelected {
+                self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            }
+        } else {
+            self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
     }
     
     private func isIndexPathSelectable(indexPath: NSIndexPath) -> Bool {
@@ -590,5 +676,17 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         }
         
         return false
+    }
+    
+    //MARK: - Table view cell input delegate
+    
+    public func tableInputViewCellDidFinish(cell tableViewCell: TableViewCell) {
+        
+        let selectedRowIndex = -1
+        if let inputCell = tableViewCell as? TableInputTextFieldViewCell {
+            self.textFieldDidReturn(inputCell.textField)
+        }
+        
+        
     }
 }
