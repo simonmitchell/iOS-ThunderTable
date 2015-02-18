@@ -21,7 +21,6 @@ FOUNDATION_EXPORT const unsigned char ThunderTableVersionString[];
 // Protocols
 
 // Models
-#import <ThunderTable/TSCTableSortedSections.h>
 
 #import <ThunderTable/UITableViewCellGenerator.h>
 
