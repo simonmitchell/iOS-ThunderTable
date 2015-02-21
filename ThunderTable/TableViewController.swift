@@ -20,6 +20,41 @@ Although a `TableViewController` can be used with the usual delegate and datasou
 
 public class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, TableInputViewCellDelegate {
     
+    public var selectedIndexPath: NSIndexPath?
+    private var registeredCellClasses: [String]
+    private var viewHasAppeared: Bool
+    
+    //MARK: - Table View Configuration
+    
+    ///---------------------------------------------------------------------------------------
+    /// @name Configuring the Table View
+    ///---------------------------------------------------------------------------------------
+    
+    private var dynamicHeightCells: [String : UITableViewCell!]
+    
+    /**
+    @abstract The current table view
+    @discussion Use this property for accessing information about the underlying table view
+    */
+    public var tableView: UITableView!
+    
+    /**
+    @abstract Used to enable Alphabetical index titles down the side of a table view by section
+    @discussion Each section should have a title set before enabling this property
+    */
+    public var shouldDisplayAlphabeticalSectionIndexTitles: Bool
+    
+    /**
+    @abstract Enable or disabled seperators between table cells
+    */
+    public var shouldDisplaySeparatorsOnCells: Bool
+    
+    /**
+    @abstract A boolean value indicating if the `tableView` should automatically make the first text field in the `dataSource` the first responder upon load
+    @discussion The default value of this property is `YES`. When set to `YES` the first responder will be set in `viewDidAppear` the first time the view appears.
+    */
+    public var shouldMakeFirstTextFieldFirstResponder: Bool
+    
     //MARK: - Initialization
     
     ///---------------------------------------------------------------------------------------
@@ -37,7 +72,6 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         self.viewHasAppeared = false
         self.dynamicHeightCells = Dictionary()
         self.shouldMakeFirstTextFieldFirstResponder = true
-        self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: style)
         self.shouldDisplayAlphabeticalSectionIndexTitles = false
         self.shouldDisplaySeparatorsOnCells = true
         self.refreshEnabled = false
@@ -47,6 +81,7 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         
         super.init()
         
+        self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: style)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardDidShow:", name: UIKeyboardDidShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
     }
@@ -62,7 +97,6 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         self.viewHasAppeared = false
         self.dynamicHeightCells = Dictionary()
         self.shouldMakeFirstTextFieldFirstResponder = true
-        self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Grouped)
         self.shouldDisplayAlphabeticalSectionIndexTitles = false
         self.shouldDisplaySeparatorsOnCells = true
         self.refreshEnabled = false
@@ -173,43 +207,6 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         
         self.dataSource = source
     }
-    
-    public var selectedIndexPath: NSIndexPath?
-    
-    private var registeredCellClasses: [String]
-    
-    private var viewHasAppeared: Bool
-    
-    //MARK: - Table View Configuration
-
-    ///---------------------------------------------------------------------------------------
-    /// @name Configuring the Table View
-    ///---------------------------------------------------------------------------------------
-    
-    private var dynamicHeightCells: [String : UITableViewCell!]
-    
-    /**
-    @abstract The current table view
-    @discussion Use this property for accessing information about the underlying table view
-    */
-    public var tableView: UITableView
-    
-    /**
-    @abstract Used to enable Alphabetical index titles down the side of a table view by section
-    @discussion Each section should have a title set before enabling this property
-    */
-    public var shouldDisplayAlphabeticalSectionIndexTitles: Bool
-    
-    /**
-    @abstract Enable or disabled seperators between table cells
-    */
-    public var shouldDisplaySeparatorsOnCells: Bool
-    
-    /**
-    @abstract A boolean value indicating if the `tableView` should automatically make the first text field in the `dataSource` the first responder upon load
-    @discussion The default value of this property is `YES`. When set to `YES` the first responder will be set in `viewDidAppear` the first time the view appears.
-    */
-    public var shouldMakeFirstTextFieldFirstResponder: Bool
     
     //MARK: - UITableViewDataSource methods
     
