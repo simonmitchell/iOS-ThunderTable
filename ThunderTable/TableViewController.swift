@@ -349,6 +349,8 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
             }
         }
         
+        row.customise?(cell)
+        
         return cell
     }
     

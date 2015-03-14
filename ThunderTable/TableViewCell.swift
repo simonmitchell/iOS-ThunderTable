@@ -30,7 +30,7 @@ public class TableViewCell: UITableViewCell {
         self.separatorTopView = UIView()
         self.separatorBottomView = UIView()
         self.shouldDisplaySeparators = true
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        super.init(style: .Subtitle, reuseIdentifier: reuseIdentifier)
         
         self.separatorTopView.backgroundColor = ThemeManager.sharedTheme().tableSeperatorColor()
         self.contentView.addSubview(self.separatorTopView)
