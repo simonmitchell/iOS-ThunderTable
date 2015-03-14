@@ -222,6 +222,10 @@ public class TableViewController: UIViewController, UITableViewDataSource, UITab
         return self.dataSource[section].sectionItems().count
     }
     
+    public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return self.dataSource.count
+    }
+    
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let tableViewCellClass: AnyClass = self.tableView(tableView, cellClassForIndexPath: indexPath)
